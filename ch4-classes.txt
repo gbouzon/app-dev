@@ -9,3 +9,33 @@ Example: Console.WriteLine($"Initial name is: " {myAccount.GetName()}");
 
 In C#, the convention is camel case for variable names and pascal case for class names, method names, etc.
 Example: class Account should be capitalized and method GetName too (pascal case) whilst String accountName is created using camel case.
+
+Instance variables and properties are *not* the same thing in C#. 
+Instance variables are instance variables or attributes of a class, object but a property in C# is a tool used to get and set an instance variable's value.
+
+A property is a member that provides a flexible mechanism to read, write, or compute the value of a private field - from https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
+
+The compiler is able to recognize whether we are calling the getter or the setter depending on the context.
+Example: a getter has a return type and a setter does not so all we need to do is call the property and the compiler will do the rest.
+
+private String name;
+
+public String Name {
+  get {
+    return name;
+  }
+  set {
+    name = value;
+  }
+}
+
+then we call the property.
+
+The way the compiler differs the instance variable from the property is because the instance variable is NOT capitalized whilst the propety is.
+String name - instance variable
+String Name - property
+C# is thus a case sensitive language
+
+short-hand notation for creation of instance variable + property: public String Name { get; set; } 
+also called an auto-implemented property.
+
