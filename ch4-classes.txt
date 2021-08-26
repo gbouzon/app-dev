@@ -1,0 +1,11 @@
+# Data Types:
+## 1. Primitive data types 
+## 2. Reference data types:
+### Any class can be a reference data type (as soon as an object of that class is created, said object becomes an object of that data type)
+<t> Example: a Car object created from a Car class is an object of Car data type (though more complex than simple data types such as doubles or ints).
+
+'$' in C# works similar as 'f$' in Python: used to warn compiler of a concatenation between a hardcoded String and a referenced String, aka interpolated Strings.
+Example: Console.WriteLine($"Initial name is: " {myAccount.GetName()}");
+
+In C#, the convention is camel case for variable names and pascal case for class names, method names, etc.
+Example: class Account should be capitalized and method GetName too (pascal case) whilst String accountName is created using camel case.
