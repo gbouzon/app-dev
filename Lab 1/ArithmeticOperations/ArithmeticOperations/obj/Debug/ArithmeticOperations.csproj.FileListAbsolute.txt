@@ -1,0 +1,6 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ArithmeticOperations\ArithmeticOperations\bin\Debug\ArithmeticOperations.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ArithmeticOperations\ArithmeticOperations\bin\Debug\ArithmeticOperations.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ArithmeticOperations\ArithmeticOperations\bin\Debug\ArithmeticOperations.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ArithmeticOperations\ArithmeticOperations\obj\Debug\ArithmeticOperations.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ArithmeticOperations\ArithmeticOperations\obj\Debug\ArithmeticOperations.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ArithmeticOperations\ArithmeticOperations\obj\Debug\ArithmeticOperations.pdb
