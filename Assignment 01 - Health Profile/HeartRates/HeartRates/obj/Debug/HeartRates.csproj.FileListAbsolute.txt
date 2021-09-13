@@ -1,0 +1,6 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HeartRates\HeartRates\bin\Debug\HeartRates.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HeartRates\HeartRates\bin\Debug\HeartRates.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HeartRates\HeartRates\bin\Debug\HeartRates.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HeartRates\HeartRates\obj\Debug\HeartRates.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HeartRates\HeartRates\obj\Debug\HeartRates.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HeartRates\HeartRates\obj\Debug\HeartRates.pdb
