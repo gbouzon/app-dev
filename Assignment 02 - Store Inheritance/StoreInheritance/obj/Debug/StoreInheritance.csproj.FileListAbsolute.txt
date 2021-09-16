@@ -1,0 +1,7 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\StoreInheritance\StoreInheritance\bin\Debug\StoreInheritance.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\StoreInheritance\StoreInheritance\bin\Debug\StoreInheritance.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\StoreInheritance\StoreInheritance\bin\Debug\StoreInheritance.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\StoreInheritance\StoreInheritance\obj\Debug\StoreInheritance.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\StoreInheritance\StoreInheritance\obj\Debug\StoreInheritance.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\StoreInheritance\StoreInheritance\obj\Debug\StoreInheritance.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\StoreInheritance\StoreInheritance\obj\Debug\StoreInheritance.csproj.AssemblyReference.cache
