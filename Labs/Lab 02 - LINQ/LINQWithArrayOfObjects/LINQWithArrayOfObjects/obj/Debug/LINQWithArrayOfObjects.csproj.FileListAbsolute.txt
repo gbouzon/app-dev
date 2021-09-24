@@ -1,0 +1,6 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithArrayOfObjects\LINQWithArrayOfObjects\bin\Debug\LINQWithArrayOfObjects.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithArrayOfObjects\LINQWithArrayOfObjects\bin\Debug\LINQWithArrayOfObjects.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithArrayOfObjects\LINQWithArrayOfObjects\bin\Debug\LINQWithArrayOfObjects.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithArrayOfObjects\LINQWithArrayOfObjects\obj\Debug\LINQWithArrayOfObjects.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithArrayOfObjects\LINQWithArrayOfObjects\obj\Debug\LINQWithArrayOfObjects.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithArrayOfObjects\LINQWithArrayOfObjects\obj\Debug\LINQWithArrayOfObjects.pdb

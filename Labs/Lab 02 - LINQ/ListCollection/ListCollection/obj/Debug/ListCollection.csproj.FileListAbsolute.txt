@@ -1,0 +1,6 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ListCollection\ListCollection\bin\Debug\ListCollection.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ListCollection\ListCollection\bin\Debug\ListCollection.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ListCollection\ListCollection\bin\Debug\ListCollection.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ListCollection\ListCollection\obj\Debug\ListCollection.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ListCollection\ListCollection\obj\Debug\ListCollection.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\ListCollection\ListCollection\obj\Debug\ListCollection.pdb

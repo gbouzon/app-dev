@@ -1,0 +1,7 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithSimpleTypeArray\LINQWithSimpleTypeArray\bin\Debug\LINQWithSimpleTypeArray.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithSimpleTypeArray\LINQWithSimpleTypeArray\bin\Debug\LINQWithSimpleTypeArray.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithSimpleTypeArray\LINQWithSimpleTypeArray\bin\Debug\LINQWithSimpleTypeArray.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithSimpleTypeArray\LINQWithSimpleTypeArray\obj\Debug\LINQWithSimpleTypeArray.csproj.AssemblyReference.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithSimpleTypeArray\LINQWithSimpleTypeArray\obj\Debug\LINQWithSimpleTypeArray.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithSimpleTypeArray\LINQWithSimpleTypeArray\obj\Debug\LINQWithSimpleTypeArray.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithSimpleTypeArray\LINQWithSimpleTypeArray\obj\Debug\LINQWithSimpleTypeArray.pdb

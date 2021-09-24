@@ -1,0 +1,7 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\FirstClass\FirstClass\bin\Debug\FirstClass.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\FirstClass\FirstClass\bin\Debug\FirstClass.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\FirstClass\FirstClass\bin\Debug\FirstClass.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\FirstClass\FirstClass\obj\Debug\FirstClass.csproj.AssemblyReference.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\FirstClass\FirstClass\obj\Debug\FirstClass.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\FirstClass\FirstClass\obj\Debug\FirstClass.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\FirstClass\FirstClass\obj\Debug\FirstClass.pdb

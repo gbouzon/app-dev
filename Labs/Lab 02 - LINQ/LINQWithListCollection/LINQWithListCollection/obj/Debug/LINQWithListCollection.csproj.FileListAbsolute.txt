@@ -1,0 +1,7 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithListCollection\LINQWithListCollection\bin\Debug\LINQWithListCollection.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithListCollection\LINQWithListCollection\bin\Debug\LINQWithListCollection.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithListCollection\LINQWithListCollection\bin\Debug\LINQWithListCollection.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithListCollection\LINQWithListCollection\obj\Debug\LINQWithListCollection.csproj.AssemblyReference.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithListCollection\LINQWithListCollection\obj\Debug\LINQWithListCollection.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithListCollection\LINQWithListCollection\obj\Debug\LINQWithListCollection.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\LINQWithListCollection\LINQWithListCollection\obj\Debug\LINQWithListCollection.pdb

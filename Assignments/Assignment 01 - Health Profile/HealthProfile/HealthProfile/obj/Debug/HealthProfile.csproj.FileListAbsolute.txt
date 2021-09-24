@@ -1,0 +1,6 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HealthProfile\HealthProfile\obj\Debug\HealthProfile.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HealthProfile\HealthProfile\bin\Debug\HealthProfile.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HealthProfile\HealthProfile\bin\Debug\HealthProfile.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HealthProfile\HealthProfile\bin\Debug\HealthProfile.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HealthProfile\HealthProfile\obj\Debug\HealthProfile.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\HealthProfile\HealthProfile\obj\Debug\HealthProfile.pdb
