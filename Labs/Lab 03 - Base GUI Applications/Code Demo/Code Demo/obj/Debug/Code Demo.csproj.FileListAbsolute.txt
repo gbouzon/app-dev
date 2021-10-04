@@ -1,0 +1,9 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Code Demo\Code Demo\bin\Debug\Code Demo.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Code Demo\Code Demo\bin\Debug\Code Demo.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Code Demo\Code Demo\bin\Debug\Code Demo.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Code Demo\Code Demo\obj\Debug\Code_Demo.Form1.resources
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Code Demo\Code Demo\obj\Debug\Code_Demo.Properties.Resources.resources
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Code Demo\Code Demo\obj\Debug\Code Demo.csproj.GenerateResource.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Code Demo\Code Demo\obj\Debug\Code Demo.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Code Demo\Code Demo\obj\Debug\Code Demo.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Code Demo\Code Demo\obj\Debug\Code Demo.pdb

@@ -1,0 +1,9 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Presidential Trivia\Presidential Trivia\Presidential Trivia\bin\Debug\Presidential Trivia.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Presidential Trivia\Presidential Trivia\Presidential Trivia\bin\Debug\Presidential Trivia.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Presidential Trivia\Presidential Trivia\Presidential Trivia\bin\Debug\Presidential Trivia.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Presidential Trivia\Presidential Trivia\Presidential Trivia\obj\Debug\Presidential_Trivia.Form1.resources
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Presidential Trivia\Presidential Trivia\Presidential Trivia\obj\Debug\Presidential_Trivia.Properties.Resources.resources
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Presidential Trivia\Presidential Trivia\Presidential Trivia\obj\Debug\Presidential Trivia.csproj.GenerateResource.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Presidential Trivia\Presidential Trivia\Presidential Trivia\obj\Debug\Presidential Trivia.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Presidential Trivia\Presidential Trivia\Presidential Trivia\obj\Debug\Presidential Trivia.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Presidential Trivia\Presidential Trivia\Presidential Trivia\obj\Debug\Presidential Trivia.pdb

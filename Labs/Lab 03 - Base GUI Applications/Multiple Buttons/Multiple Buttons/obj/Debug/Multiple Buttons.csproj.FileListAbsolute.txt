@@ -1,0 +1,9 @@
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Multiple Buttons\Multiple Buttons\bin\Debug\Multiple Buttons.exe.config
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Multiple Buttons\Multiple Buttons\bin\Debug\Multiple Buttons.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Multiple Buttons\Multiple Buttons\bin\Debug\Multiple Buttons.pdb
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Multiple Buttons\Multiple Buttons\obj\Debug\Multiple_Buttons.Form1.resources
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Multiple Buttons\Multiple Buttons\obj\Debug\Multiple_Buttons.Properties.Resources.resources
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Multiple Buttons\Multiple Buttons\obj\Debug\Multiple Buttons.csproj.GenerateResource.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Multiple Buttons\Multiple Buttons\obj\Debug\Multiple Buttons.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Multiple Buttons\Multiple Buttons\obj\Debug\Multiple Buttons.exe
+C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 03\Multiple Buttons\Multiple Buttons\obj\Debug\Multiple Buttons.pdb
