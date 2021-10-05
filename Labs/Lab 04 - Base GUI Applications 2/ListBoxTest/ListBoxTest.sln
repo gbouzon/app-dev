@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBoxTest", "ListBoxTest\ListBoxTest.csproj", "{0D3AECD9-8073-4A60-92F5-B9624ED88ACA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D3AECD9-8073-4A60-92F5-B9624ED88ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3AECD9-8073-4A60-92F5-B9624ED88ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3AECD9-8073-4A60-92F5-B9624ED88ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3AECD9-8073-4A60-92F5-B9624ED88ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6B5F9A2-B130-42BA-B823-58B539BA7AF1}
+	EndGlobalSection
+EndGlobal
