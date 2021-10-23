@@ -16,7 +16,7 @@ namespace HugeInteger
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HugeInteger());
+            Application.Run(new Form1());
         }
     }
 }
