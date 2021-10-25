@@ -1,7 +1,7 @@
 ﻿
 namespace HugeInteger
 {
-    partial class Form1
+    partial class GUI
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace HugeInteger
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUI));
             this.input1TextBox = new System.Windows.Forms.TextBox();
             this.input2TextBox = new System.Windows.Forms.TextBox();
             this.additionButton = new System.Windows.Forms.Button();
@@ -43,7 +43,7 @@ namespace HugeInteger
             this.isGreaterThanOrEqualToRadioButton = new System.Windows.Forms.RadioButton();
             this.isLessThanOrEqualToRadioButton = new System.Windows.Forms.RadioButton();
             this.remainderButton = new System.Windows.Forms.Button();
-            this.calculateButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.displayLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -82,6 +82,7 @@ namespace HugeInteger
             this.additionButton.TabIndex = 2;
             this.additionButton.Text = "Addition";
             this.additionButton.UseVisualStyleBackColor = false;
+            this.additionButton.Click += new System.EventHandler(this.additionButton_Click);
             // 
             // subtractionButton
             // 
@@ -205,35 +206,36 @@ namespace HugeInteger
             this.remainderButton.Text = "Remainder";
             this.remainderButton.UseVisualStyleBackColor = false;
             // 
-            // calculateButton
+            // exitButton
             // 
-            this.calculateButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculateButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.calculateButton.Location = new System.Drawing.Point(117, 442);
-            this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(134, 34);
-            this.calculateButton.TabIndex = 13;
-            this.calculateButton.Text = "Calculate";
-            this.calculateButton.UseVisualStyleBackColor = false;
+            this.exitButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exitButton.Location = new System.Drawing.Point(117, 497);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(134, 34);
+            this.exitButton.TabIndex = 13;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // displayLabel
             // 
-            this.displayLabel.Location = new System.Drawing.Point(49, 488);
+            this.displayLabel.Location = new System.Drawing.Point(46, 447);
             this.displayLabel.Name = "displayLabel";
             this.displayLabel.Size = new System.Drawing.Size(263, 35);
             this.displayLabel.TabIndex = 14;
             this.displayLabel.Text = "Result here";
             this.displayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Form1
+            // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(361, 532);
+            this.ClientSize = new System.Drawing.Size(363, 552);
             this.Controls.Add(this.displayLabel);
-            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.remainderButton);
             this.Controls.Add(this.isLessThanOrEqualToRadioButton);
             this.Controls.Add(this.isGreaterThanOrEqualToRadioButton);
@@ -248,7 +250,7 @@ namespace HugeInteger
             this.Controls.Add(this.input2TextBox);
             this.Controls.Add(this.input1TextBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "GUI";
             this.Text = "Huge Integer";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -269,7 +271,7 @@ namespace HugeInteger
         private System.Windows.Forms.RadioButton isGreaterThanOrEqualToRadioButton;
         private System.Windows.Forms.RadioButton isLessThanOrEqualToRadioButton;
         private System.Windows.Forms.Button remainderButton;
-        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label displayLabel;
         private System.Windows.Forms.Button additionButton;
     }

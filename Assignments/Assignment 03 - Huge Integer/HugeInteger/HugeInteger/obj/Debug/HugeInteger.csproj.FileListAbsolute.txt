@@ -1,8 +1,8 @@
-C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 03 - Huge Integer\HugeInteger\HugeInteger\bin\Debug\HugeInteger.exe.config
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 03 - Huge Integer\HugeInteger\HugeInteger\bin\Debug\HugeInteger.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 03 - Huge Integer\HugeInteger\HugeInteger\bin\Debug\HugeInteger.exe.config
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 03 - Huge Integer\HugeInteger\HugeInteger\bin\Debug\HugeInteger.pdb
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 03 - Huge Integer\HugeInteger\HugeInteger\obj\Debug\HugeInteger.csproj.AssemblyReference.cache
-C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 03 - Huge Integer\HugeInteger\HugeInteger\obj\Debug\HugeInteger.Form1.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 03 - Huge Integer\HugeInteger\HugeInteger\obj\Debug\HugeInteger.GUI.resources
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 03 - Huge Integer\HugeInteger\HugeInteger\obj\Debug\HugeInteger.Properties.Resources.resources
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 03 - Huge Integer\HugeInteger\HugeInteger\obj\Debug\HugeInteger.csproj.GenerateResource.cache
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 03 - Huge Integer\HugeInteger\HugeInteger\obj\Debug\HugeInteger.csproj.CoreCompileInputs.cache
