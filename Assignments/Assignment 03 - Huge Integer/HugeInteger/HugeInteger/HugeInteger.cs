@@ -30,9 +30,9 @@ namespace HugeInteger
             }
         }
 
-        public char[] Input()
+        public int[] Input()
         {
-            return this.NumberStr.ToCharArray();
+            return Array.ConvertAll(this.NumberStr.ToCharArray(), c => (int) Char.GetNumericValue(c));
         }
 
         public override string ToString()
@@ -41,9 +41,9 @@ namespace HugeInteger
         }
 
 
-        public string ToString(char[] charArray)
+        public string ToString(int[] intArray)
         {
-            return string.Join("", charArray); //transforms array back into string
+            return string.Join("", intArray); //transforms array back into string
         }
 
         public HugeInteger Multiply(HugeInteger h1, HugeInteger h2)
@@ -69,12 +69,12 @@ namespace HugeInteger
         public int[] ToIntArray(HugeInteger h, int maxLength)
         {
             if (h.NumberStr.Length == maxLength)
-                return Array.ConvertAll(h.Input(), c => (int)Char.GetNumericValue(c));
+                return h.Input();
             else
             {
                 int[] num1 = new int[maxLength];
                 int length = maxLength - h.NumberStr.Length;
-                Array.ConvertAll(h.Input(), c => (int)Char.GetNumericValue(c)).CopyTo(num1, length);
+                h.Input().CopyTo(num1, length);
                 return num1;
             }
         }
@@ -108,13 +108,13 @@ namespace HugeInteger
                     string localResult = (num1[i] + num2[i] + surplus[i]).ToString();
                     if (i != 0)
                     {
-                        result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
-                        surplus[i - 1] = (int)Char.GetNumericValue(localResult[0]);
+                        result[i + 1] = (int) Char.GetNumericValue(localResult[1]);
+                        surplus[i - 1] = (int) Char.GetNumericValue(localResult[0]);
                     }
                     else
                     {
-                        result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
-                        result[0] = (int)Char.GetNumericValue(localResult[0]);
+                        result[i + 1] = (int) Char.GetNumericValue(localResult[1]);
+                        result[0] = (int) Char.GetNumericValue(localResult[0]);
                     }
                 }
                 else result[i + 1] = num1[i] + num2[i] + surplus[i];
@@ -123,7 +123,7 @@ namespace HugeInteger
             //checking result array
             //Array.ForEach(result, Console.Write);
             //Console.WriteLine(result.Length);
-            return new HugeInteger(string.Join("", result));
+            return new HugeInteger(ToString(result));
         }
 
         public HugeInteger Subtract(HugeInteger h1, HugeInteger h2)
@@ -138,7 +138,6 @@ namespace HugeInteger
                     return false;
 
             return true; //only returns true if ALL chars in the array are zero
-            //test it laters
         }
 
         public Boolean IsEqualTo(HugeInteger h1, HugeInteger h2)
@@ -151,6 +150,7 @@ namespace HugeInteger
         {
             if (IsEqualTo(h1, h2))
                 return false;
+
             return true;
         }
         public Boolean IsGreaterThan(HugeInteger h1, HugeInteger h2)
