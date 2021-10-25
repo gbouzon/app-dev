@@ -32,7 +32,7 @@ namespace HugeInteger
 
         public int[] Input()
         {
-            return Array.ConvertAll(this.NumberStr.ToCharArray(), c => (int) Char.GetNumericValue(c));
+            return Array.ConvertAll(this.NumberStr.ToCharArray(), c => (int)Char.GetNumericValue(c));
         }
 
         public override string ToString()
@@ -81,7 +81,7 @@ namespace HugeInteger
 
         public HugeInteger Add(HugeInteger h1, HugeInteger h2)
         {
-            //get max length between h1 and h2
+            //get max length between h1 and h2 to have 2 arrays of the same size
             int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
 
             //creating int arrays
@@ -108,13 +108,13 @@ namespace HugeInteger
                     string localResult = (num1[i] + num2[i] + surplus[i]).ToString();
                     if (i != 0)
                     {
-                        result[i + 1] = (int) Char.GetNumericValue(localResult[1]);
-                        surplus[i - 1] = (int) Char.GetNumericValue(localResult[0]);
+                        result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
+                        surplus[i - 1] = (int)Char.GetNumericValue(localResult[0]);
                     }
                     else
                     {
-                        result[i + 1] = (int) Char.GetNumericValue(localResult[1]);
-                        result[0] = (int) Char.GetNumericValue(localResult[0]);
+                        result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
+                        result[0] = (int)Char.GetNumericValue(localResult[0]);
                     }
                 }
                 else result[i + 1] = num1[i] + num2[i] + surplus[i];
@@ -142,16 +142,26 @@ namespace HugeInteger
 
         public Boolean IsEqualTo(HugeInteger h1, HugeInteger h2)
         {
-            //logic: if (h1.length>h2.length || h1.length<h2.length) && !IsZero return false;
-            return false;
+            //get max length between h1 and h2
+            int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
+
+            //2 arrays of the same size in case we have the same number but one with extra zeros at the beginning
+            int[] num1 = ToIntArray(h1, maxLength);
+            int[] num2 = ToIntArray(h2, maxLength);
+
+            for (int i = 0; i < maxLength; i++)
+                if (num1[i] != num2[i])
+                    return false;
+
+            return true;
         }
 
         public Boolean IsNotEqualTo(HugeInteger h1, HugeInteger h2)
         {
-            if (IsEqualTo(h1, h2))
-                return false;
+            if (!IsEqualTo(h1, h2))
+                return true;
 
-            return true;
+            return false;
         }
         public Boolean IsGreaterThan(HugeInteger h1, HugeInteger h2)
         {
