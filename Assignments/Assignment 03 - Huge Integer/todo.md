@@ -10,6 +10,7 @@
         2. implement click events for the rest of the buttons <br>
         3. remove repetition in ^^ (later when h instantiation and error check are repeated) <br>
         4. add documentation <br>
+        5. radio button stuff <br>
     </blockquote>
 </p>
 
@@ -17,10 +18,21 @@
 
 <p>
     <blockquote>
-        1. refactor & clean code <br>
-        2. fix Input() conversion to char[] -> int[] instead <br>
-        3. replace all mentions of char[] ^^ <br>
-        4. implement the rest of the methods aka everything besides add() <br>
+        01. refactor & clean code <br>
+        02. fix Input() conversion to char[] -> int[] instead -<b>DONE</b> <br>
+        03. replace all mentions of char[] ^^ -<b>DONE</b> <br>
+        04. implement Multiply() <br>
+        05. implement Divide() <br>
+        06. implement Remainder() <br>
+        07. implement Add() -<b>DONE</b> <br>
+        08. implement Subtract() <br>
+        09. implement IsZero() -<b>DONE</b> <br>
+        10. implement IsEqualTo(() <br>
+        11. implement IsNotEqualTo() <br>
+        12. implement IsGreaterThan() <br>
+        13. implement IsLessThan() <br>
+        14. implement IsGreaterThanOrEqualTo() <br>
+        15. implement IsLessThanOrEqualTo() <br>
     </blockquote>
 </p>
 
