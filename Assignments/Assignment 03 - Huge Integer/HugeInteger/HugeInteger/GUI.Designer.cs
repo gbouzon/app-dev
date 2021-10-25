@@ -38,13 +38,15 @@ namespace HugeInteger
             this.divisionButton = new System.Windows.Forms.Button();
             this.isEqualToRadioButton = new System.Windows.Forms.RadioButton();
             this.isNotEqualToRadioButton = new System.Windows.Forms.RadioButton();
-            this.isGreaterThan = new System.Windows.Forms.RadioButton();
+            this.isGreaterThanRadioButton = new System.Windows.Forms.RadioButton();
             this.isLessThanRadioButton = new System.Windows.Forms.RadioButton();
             this.isGreaterThanOrEqualToRadioButton = new System.Windows.Forms.RadioButton();
             this.isLessThanOrEqualToRadioButton = new System.Windows.Forms.RadioButton();
             this.remainderButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.displayLabel = new System.Windows.Forms.Label();
+            this.radioButtonsGroupBox = new System.Windows.Forms.GroupBox();
+            this.radioButtonsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // input1TextBox
@@ -124,73 +126,73 @@ namespace HugeInteger
             // 
             this.isEqualToRadioButton.AutoSize = true;
             this.isEqualToRadioButton.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.isEqualToRadioButton.Enabled = false;
             this.isEqualToRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.isEqualToRadioButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.isEqualToRadioButton.Location = new System.Drawing.Point(109, 342);
+            this.isEqualToRadioButton.Location = new System.Drawing.Point(20, 29);
             this.isEqualToRadioButton.Name = "isEqualToRadioButton";
             this.isEqualToRadioButton.Size = new System.Drawing.Size(40, 24);
             this.isEqualToRadioButton.TabIndex = 6;
-            this.isEqualToRadioButton.TabStop = true;
             this.isEqualToRadioButton.Text = "=";
             this.isEqualToRadioButton.UseVisualStyleBackColor = false;
             // 
             // isNotEqualToRadioButton
             // 
             this.isNotEqualToRadioButton.AutoSize = true;
+            this.isNotEqualToRadioButton.Enabled = false;
             this.isNotEqualToRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isNotEqualToRadioButton.Location = new System.Drawing.Point(109, 372);
+            this.isNotEqualToRadioButton.Location = new System.Drawing.Point(20, 59);
             this.isNotEqualToRadioButton.Name = "isNotEqualToRadioButton";
             this.isNotEqualToRadioButton.Size = new System.Drawing.Size(45, 24);
             this.isNotEqualToRadioButton.TabIndex = 7;
-            this.isNotEqualToRadioButton.TabStop = true;
             this.isNotEqualToRadioButton.Text = "!=";
             this.isNotEqualToRadioButton.UseVisualStyleBackColor = true;
             // 
-            // isGreaterThan
+            // isGreaterThanRadioButton
             // 
-            this.isGreaterThan.AutoSize = true;
-            this.isGreaterThan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isGreaterThan.Location = new System.Drawing.Point(109, 402);
-            this.isGreaterThan.Name = "isGreaterThan";
-            this.isGreaterThan.Size = new System.Drawing.Size(40, 24);
-            this.isGreaterThan.TabIndex = 8;
-            this.isGreaterThan.TabStop = true;
-            this.isGreaterThan.Text = ">";
-            this.isGreaterThan.UseVisualStyleBackColor = true;
+            this.isGreaterThanRadioButton.AutoSize = true;
+            this.isGreaterThanRadioButton.Enabled = false;
+            this.isGreaterThanRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isGreaterThanRadioButton.Location = new System.Drawing.Point(20, 89);
+            this.isGreaterThanRadioButton.Name = "isGreaterThanRadioButton";
+            this.isGreaterThanRadioButton.Size = new System.Drawing.Size(40, 24);
+            this.isGreaterThanRadioButton.TabIndex = 8;
+            this.isGreaterThanRadioButton.Text = ">";
+            this.isGreaterThanRadioButton.UseVisualStyleBackColor = true;
             // 
             // isLessThanRadioButton
             // 
             this.isLessThanRadioButton.AutoSize = true;
+            this.isLessThanRadioButton.Enabled = false;
             this.isLessThanRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isLessThanRadioButton.Location = new System.Drawing.Point(211, 342);
+            this.isLessThanRadioButton.Location = new System.Drawing.Point(131, 29);
             this.isLessThanRadioButton.Name = "isLessThanRadioButton";
             this.isLessThanRadioButton.Size = new System.Drawing.Size(40, 24);
             this.isLessThanRadioButton.TabIndex = 9;
-            this.isLessThanRadioButton.TabStop = true;
             this.isLessThanRadioButton.Text = "<";
             this.isLessThanRadioButton.UseVisualStyleBackColor = true;
             // 
             // isGreaterThanOrEqualToRadioButton
             // 
             this.isGreaterThanOrEqualToRadioButton.AutoSize = true;
+            this.isGreaterThanOrEqualToRadioButton.Enabled = false;
             this.isGreaterThanOrEqualToRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isGreaterThanOrEqualToRadioButton.Location = new System.Drawing.Point(211, 372);
+            this.isGreaterThanOrEqualToRadioButton.Location = new System.Drawing.Point(131, 59);
             this.isGreaterThanOrEqualToRadioButton.Name = "isGreaterThanOrEqualToRadioButton";
             this.isGreaterThanOrEqualToRadioButton.Size = new System.Drawing.Size(50, 24);
             this.isGreaterThanOrEqualToRadioButton.TabIndex = 10;
-            this.isGreaterThanOrEqualToRadioButton.TabStop = true;
             this.isGreaterThanOrEqualToRadioButton.Text = ">=";
             this.isGreaterThanOrEqualToRadioButton.UseVisualStyleBackColor = true;
             // 
             // isLessThanOrEqualToRadioButton
             // 
             this.isLessThanOrEqualToRadioButton.AutoSize = true;
+            this.isLessThanOrEqualToRadioButton.Enabled = false;
             this.isLessThanOrEqualToRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isLessThanOrEqualToRadioButton.Location = new System.Drawing.Point(211, 402);
+            this.isLessThanOrEqualToRadioButton.Location = new System.Drawing.Point(131, 89);
             this.isLessThanOrEqualToRadioButton.Name = "isLessThanOrEqualToRadioButton";
             this.isLessThanOrEqualToRadioButton.Size = new System.Drawing.Size(50, 24);
             this.isLessThanOrEqualToRadioButton.TabIndex = 11;
-            this.isLessThanOrEqualToRadioButton.TabStop = true;
             this.isLessThanOrEqualToRadioButton.Text = "<=";
             this.isLessThanOrEqualToRadioButton.UseVisualStyleBackColor = true;
             // 
@@ -211,7 +213,7 @@ namespace HugeInteger
             this.exitButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.exitButton.Location = new System.Drawing.Point(117, 497);
+            this.exitButton.Location = new System.Drawing.Point(117, 514);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(134, 34);
             this.exitButton.TabIndex = 13;
@@ -221,28 +223,38 @@ namespace HugeInteger
             // 
             // displayLabel
             // 
-            this.displayLabel.Location = new System.Drawing.Point(46, 447);
+            this.displayLabel.Location = new System.Drawing.Point(46, 462);
             this.displayLabel.Name = "displayLabel";
             this.displayLabel.Size = new System.Drawing.Size(263, 35);
             this.displayLabel.TabIndex = 14;
             this.displayLabel.Text = "Result here";
             this.displayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // radioButtonsGroupBox
+            // 
+            this.radioButtonsGroupBox.Controls.Add(this.isEqualToRadioButton);
+            this.radioButtonsGroupBox.Controls.Add(this.isNotEqualToRadioButton);
+            this.radioButtonsGroupBox.Controls.Add(this.isGreaterThanRadioButton);
+            this.radioButtonsGroupBox.Controls.Add(this.isLessThanRadioButton);
+            this.radioButtonsGroupBox.Controls.Add(this.isLessThanOrEqualToRadioButton);
+            this.radioButtonsGroupBox.Controls.Add(this.isGreaterThanOrEqualToRadioButton);
+            this.radioButtonsGroupBox.Location = new System.Drawing.Point(90, 319);
+            this.radioButtonsGroupBox.Name = "radioButtonsGroupBox";
+            this.radioButtonsGroupBox.Size = new System.Drawing.Size(192, 128);
+            this.radioButtonsGroupBox.TabIndex = 15;
+            this.radioButtonsGroupBox.TabStop = false;
+            this.radioButtonsGroupBox.Text = "Comparison";
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(363, 552);
+            this.ClientSize = new System.Drawing.Size(363, 584);
+            this.Controls.Add(this.radioButtonsGroupBox);
             this.Controls.Add(this.displayLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.remainderButton);
-            this.Controls.Add(this.isLessThanOrEqualToRadioButton);
-            this.Controls.Add(this.isGreaterThanOrEqualToRadioButton);
-            this.Controls.Add(this.isLessThanRadioButton);
-            this.Controls.Add(this.isGreaterThan);
-            this.Controls.Add(this.isNotEqualToRadioButton);
-            this.Controls.Add(this.isEqualToRadioButton);
             this.Controls.Add(this.divisionButton);
             this.Controls.Add(this.multiplicationButton);
             this.Controls.Add(this.subtractionButton);
@@ -252,6 +264,8 @@ namespace HugeInteger
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GUI";
             this.Text = "Huge Integer";
+            this.radioButtonsGroupBox.ResumeLayout(false);
+            this.radioButtonsGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,7 +280,7 @@ namespace HugeInteger
         private System.Windows.Forms.Button divisionButton;
         private System.Windows.Forms.RadioButton isEqualToRadioButton;
         private System.Windows.Forms.RadioButton isNotEqualToRadioButton;
-        private System.Windows.Forms.RadioButton isGreaterThan;
+        private System.Windows.Forms.RadioButton isGreaterThanRadioButton;
         private System.Windows.Forms.RadioButton isLessThanRadioButton;
         private System.Windows.Forms.RadioButton isGreaterThanOrEqualToRadioButton;
         private System.Windows.Forms.RadioButton isLessThanOrEqualToRadioButton;
@@ -274,6 +288,6 @@ namespace HugeInteger
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label displayLabel;
         private System.Windows.Forms.Button additionButton;
+        private System.Windows.Forms.GroupBox radioButtonsGroupBox;
     }
 }
-
