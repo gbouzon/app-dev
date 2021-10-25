@@ -10,7 +10,7 @@
         2. implement click events for the rest of the buttons <br>
         3. remove repetition in ^^ (later when h instantiation and error check are repeated) <br>
         4. add documentation <br>
-        5. radio button stuff <br>
+        5. radio button stuff <>
     </blockquote>
 </p>
 
@@ -27,8 +27,8 @@
         07. implement Add() -<b>DONE</b> <br>
         08. implement Subtract() <br>
         09. implement IsZero() -<b>DONE</b> <br>
-        10. implement IsEqualTo(() <br>
-        11. implement IsNotEqualTo() <br>
+        10. implement IsEqualTo(() -<b>DONE</b> <br>
+        11. implement IsNotEqualTo() -<b>DONE</b> <br>
         12. implement IsGreaterThan() <br>
         13. implement IsLessThan() <br>
         14. implement IsGreaterThanOrEqualTo() <br>
