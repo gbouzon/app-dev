@@ -10,7 +10,8 @@
         2. implement click events for the rest of the buttons <br>
         3. remove repetition in ^^ (later when h instantiation and error check are repeated) <br>
         4. add documentation <br>
-        5. radio button stuff <>
+        5. radio button stuff -<b>DONE</b> <br>
+        6. do checkboxes instead of radio buttons (since multiple are true, multiple can be checked) <br>
     </blockquote>
 </p>
 
@@ -29,10 +30,10 @@
         09. implement IsZero() -<b>DONE</b> <br>
         10. implement IsEqualTo(() -<b>DONE</b> <br>
         11. implement IsNotEqualTo() -<b>DONE</b> <br>
-        12. implement IsGreaterThan() <br>
-        13. implement IsLessThan() <br>
-        14. implement IsGreaterThanOrEqualTo() <br>
-        15. implement IsLessThanOrEqualTo() <br>
+        12. implement IsGreaterThan() -<b>DONE</b> <br>
+        13. implement IsLessThan() -<b>DONE</b> <br>
+        14. implement IsGreaterThanOrEqualTo() -<b>DONE</b> <br>
+        15. implement IsLessThanOrEqualTo() -<b>DONE</b> <br>
     </blockquote>
 </p>
 
