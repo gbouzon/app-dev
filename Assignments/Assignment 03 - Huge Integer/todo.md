@@ -26,7 +26,7 @@
         05. implement Divide() <br>
         06. implement Remainder() <br>
         07. implement Add() -<b>DONE</b> <br>
-        08. implement Subtract() <br>
+        08. implement Subtract() -<b>DONE</b> <br>
         09. implement IsZero() -<b>DONE</b> <br>
         10. implement IsEqualTo(() -<b>DONE</b> <br>
         11. implement IsNotEqualTo() -<b>DONE</b> <br>
@@ -43,7 +43,7 @@
 
 <p>
     <blockquote>
-        1. erase printlns & extra comments <br>
+        1. erase printlns & extra comments -<b>DONE</b> <br>
         2. refactor <br>
         3. maxLength + 1 returns a result[] with an extra zero in front (modify if time allows) <br>
     </blockquote>
