@@ -158,15 +158,17 @@ namespace HugeInteger
 
         public Boolean IsNotEqualTo(HugeInteger h1, HugeInteger h2)
         {
-            if (!IsEqualTo(h1, h2))
-                return true;
+            if (IsEqualTo(h1, h2))
+                return false;
 
-            return false;
+            return true;
         }
+
         public Boolean IsGreaterThan(HugeInteger h1, HugeInteger h2)
         {
             if (IsEqualTo(h1, h2))
                 return false;
+
             else
             {
                 //get max length between h1 and h2
@@ -177,9 +179,13 @@ namespace HugeInteger
                 int[] num2 = ToIntArray(h2, maxLength);
 
                 for (int i = 0; i < maxLength; i++)
+                {
                     if (num1[i] > num2[i])
                         return true;
-
+                    else if (num1[i] < num2[i])
+                        return false;
+                }
+                //this bugs me, deal with it later
                 return false;
             }
         }
