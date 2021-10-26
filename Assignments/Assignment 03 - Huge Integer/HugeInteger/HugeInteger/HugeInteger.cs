@@ -32,7 +32,7 @@ namespace HugeInteger
 
         public int[] Input()
         {
-            return Array.ConvertAll(this.NumberStr.ToCharArray(), c => (int) Char.GetNumericValue(c));
+            return Array.ConvertAll(this.NumberStr.ToCharArray(), c => (int)Char.GetNumericValue(c));
         }
 
         public override string ToString()
@@ -61,11 +61,6 @@ namespace HugeInteger
             return new HugeInteger("change this later");
         }
 
-        //get biggest length
-        //whoever has the biggest length can keep Input() return
-        //the one with the smallest length will get a new array 
-        //get maxlength - current length to get starting point
-        //fill beginning until starting point with zeros. - default for int array
         public int[] ToIntArray(HugeInteger h, int maxLength)
         {
             if (h.NumberStr.Length == maxLength)
@@ -92,43 +87,72 @@ namespace HugeInteger
 
             for (int i = maxLength - 1; i >= 0; i--)
             {
-                //CHECKING STUFF, DEBUGGING
-
-                //Array.ForEach(surplus, Console.Write);
-                //Console.WriteLine();
-                //Array.ForEach(num1, Console.Write);
-                //Console.WriteLine();
-                //Array.ForEach(num2, Console.Write);
-                //Console.WriteLine();
-                //Array.ForEach(result, Console.Write);
-                //Console.WriteLine();
-                //Console.WriteLine();
                 if (num1[i] + num2[i] + surplus[i] > 9)
                 {
                     string localResult = (num1[i] + num2[i] + surplus[i]).ToString();
                     if (i != 0)
                     {
-                        result[i + 1] = (int) Char.GetNumericValue(localResult[1]);
-                        surplus[i - 1] = (int) Char.GetNumericValue(localResult[0]);
+                        result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
+                        surplus[i - 1] = (int)Char.GetNumericValue(localResult[0]);
                     }
                     else
                     {
-                        result[i + 1] = (int) Char.GetNumericValue(localResult[1]);
-                        result[0] = (int) Char.GetNumericValue(localResult[0]);
+                        result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
+                        result[0] = (int)Char.GetNumericValue(localResult[0]);
                     }
                 }
                 else result[i + 1] = num1[i] + num2[i] + surplus[i];
             }
 
-            //checking result array
-            //Array.ForEach(result, Console.Write);
-            //Console.WriteLine(result.Length);
             return new HugeInteger(ToString(result));
+        }
+
+        public void Borrow(int position, int[] array)
+        {
+            //gives 10 units to number after position
+            //takes 1 unit from number at position
+            if (array[position] != 0)
+            {
+                array[position + 1] += 10;
+                array[position]--;
+            }
+            else
+                if (position > 0)
+                Borrow(position - 1, array);
         }
 
         public HugeInteger Subtract(HugeInteger h1, HugeInteger h2)
         {
-            return new HugeInteger("change this later");
+            //get max length between h1 and h2 to have 2 arrays of the same size
+            int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
+
+            //creating int arrays
+            int[] num1 = ToIntArray(h1, maxLength);
+            int[] num2 = ToIntArray(h2, maxLength);
+            int[] result = new int[maxLength];
+
+            string finalResult = "";
+
+            for (int i = maxLength - 1; i >= 0; i--)
+            {
+                if (IsGreaterThanOrEqualTo(h1, h2))
+                {
+                    while (num1[i] - num2[i] < 0 && i > 0)
+                        Borrow(i - 1, num1);
+
+                    result[i] = num1[i] - num2[i];
+                    finalResult = ToString(result);
+                }
+                else
+                {
+                    while (num2[i] - num1[i] < 0 && i > 0)
+                        Borrow(i - 1, num2);
+
+                    result[i] = num2[i] - num1[i];
+                    finalResult = "-" + ToString(result);
+                }
+            }
+            return new HugeInteger(finalResult);
         }
 
         public Boolean IsZero(HugeInteger h1)
