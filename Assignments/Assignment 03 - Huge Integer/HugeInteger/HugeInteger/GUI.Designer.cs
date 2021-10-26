@@ -97,6 +97,7 @@ namespace HugeInteger
             this.subtractionButton.TabIndex = 3;
             this.subtractionButton.Text = "Subtraction";
             this.subtractionButton.UseVisualStyleBackColor = false;
+            this.subtractionButton.Click += new System.EventHandler(this.subtractionButton_Click);
             // 
             // multiplicationButton
             // 
