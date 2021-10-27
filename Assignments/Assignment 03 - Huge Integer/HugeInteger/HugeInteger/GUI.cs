@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace HugeInteger
 {
@@ -23,11 +24,12 @@ namespace HugeInteger
 
         private Boolean IsValidInput(String input)
         {
-            char[] charArray = input.ToCharArray();
-            for (int i = 0; i < charArray.Length; i++)
-                if (!Char.IsDigit(charArray[i]))
-                    return false;
-            return true;
+            //regex to only match numbers(negative and positive)
+            Regex rx = new Regex("^-?[0-9]+$");
+            if (rx.IsMatch(input))
+                return true;
+
+            return false;
         }
 
         private void ShowErrorMessage(String message)
