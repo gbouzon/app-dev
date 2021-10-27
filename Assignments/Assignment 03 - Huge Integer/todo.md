@@ -39,15 +39,27 @@
 
 ## Methods:
 
-### 1. Add():
+### 1. IsValidInput() - GUI class
+
+<p>
+    <blockquote>
+        1. modify to allow negative numbers (meaning index 0 CAN be something other than a digit (-)) <br>
+    </blockquote>
+</p>
+
+### 2. Add() - HugeInteger class:
 
 <p>
     <blockquote>
         1. erase printlns & extra comments -<b>DONE</b> <br>
         2. refactor <br>
         3. maxLength + 1 returns a result[] with an extra zero in front (modify if time allows) <br>
+        4. deal with negative numbers
     </blockquote>
 </p>
+
+
+
 
 
 
