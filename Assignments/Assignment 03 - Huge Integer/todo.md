@@ -11,7 +11,7 @@
         3. remove repetition in ^^ (later when h instantiation and error check are repeated) <br>
         4. add documentation <br>
         5. radio button stuff -<b>DONE</b> <br>
-        6. do checkboxes instead of radio buttons (since multiple are true, multiple can be checked) <br>
+        6. do checkboxes instead of radio buttons (since multiple are true, multiple can be checked) -<b>DONE</b> <br>
         7. update IsValidInput -<b>DONE</b> <br>
     </blockquote>
 </p>
