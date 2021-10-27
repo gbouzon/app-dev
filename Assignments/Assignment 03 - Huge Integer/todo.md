@@ -12,6 +12,7 @@
         4. add documentation <br>
         5. radio button stuff -<b>DONE</b> <br>
         6. do checkboxes instead of radio buttons (since multiple are true, multiple can be checked) <br>
+        7. update IsValidInput <br>
     </blockquote>
 </p>
 
@@ -34,6 +35,7 @@
         13. implement IsLessThan() -<b>DONE</b> <br>
         14. implement IsGreaterThanOrEqualTo() -<b>DONE</b> <br>
         15. implement IsLessThanOrEqualTo() -<b>DONE</b> <br>
+        16. implement IsNegative() <br>
     </blockquote>
 </p>
 
@@ -47,13 +49,13 @@
     </blockquote>
 </p>
 
-### 2. Add() - HugeInteger class:
+### 2. Add(), Subtract() - HugeInteger class:
 
 <p>
     <blockquote>
         1. erase printlns & extra comments -<b>DONE</b> <br>
         2. refactor <br>
-        3. maxLength + 1 returns a result[] with an extra zero in front (modify if time allows) <br>
+        3. returns a result[] with an extra zero in front (modify if time allows) <br>
         4. deal with negative numbers
     </blockquote>
 </p>
