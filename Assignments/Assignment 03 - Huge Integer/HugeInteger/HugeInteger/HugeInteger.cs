@@ -39,7 +39,7 @@ namespace HugeInteger
         {
             return NumberStr; //to print object
         }
-
+            
 
         public string ToString(int[] intArray)
         {
@@ -76,38 +76,55 @@ namespace HugeInteger
 
         public HugeInteger Add(HugeInteger h1, HugeInteger h2)
         {
-            //get max length between h1 and h2 to have 2 arrays of the same size
-            int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
-
-            //creating int arrays
-            int[] num1 = ToIntArray(h1, maxLength);
-            int[] num2 = ToIntArray(h2, maxLength);
-            int[] surplus = new int[maxLength]; //to add when num1+num2 > 9
-            int[] result = new int[maxLength + 1];
-
-            for (int i = maxLength - 1; i >= 0; i--)
+            if (IsNegative(h1) && IsNegative(h2))
             {
-                if (num1[i] + num2[i] + surplus[i] > 9)
-                {
-                    string localResult = (num1[i] + num2[i] + surplus[i]).ToString();
-                    if (i != 0)
-                    {
-                        result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
-                        surplus[i - 1] = (int)Char.GetNumericValue(localResult[0]);
-                    }
-                    else
-                    {
-                        result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
-                        result[0] = (int)Char.GetNumericValue(localResult[0]);
-                    }
-                }
-                else result[i + 1] = num1[i] + num2[i] + surplus[i];
+                string h1New = h1.NumberStr.Replace("-", "0");
+                string h2New = h2.NumberStr.Replace("-", "0");
+                HugeInteger finalResult = Add(new HugeInteger(h1New), new HugeInteger(h2New));
+                return new HugeInteger("-" + finalResult.NumberStr);
             }
 
-            return new HugeInteger(ToString(result));
+            else if (IsNegative(h1))
+                return Subtract(h2, new HugeInteger(h1.NumberStr.Replace("-", "0")));
+
+            else if (IsNegative(h2))
+                return Subtract(h1, new HugeInteger(h2.NumberStr.Replace("-", "0")));
+           
+            else
+            {
+                //get max length between h1 and h2 to have 2 arrays of the same size
+                int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
+
+                //creating int arrays
+                int[] num1 = ToIntArray(h1, maxLength);
+                int[] num2 = ToIntArray(h2, maxLength);
+                int[] surplus = new int[maxLength]; //to add when num1+num2 > 9
+                int[] result = new int[maxLength + 1];
+
+                for (int i = maxLength - 1; i >= 0; i--)
+                {
+                    if (num1[i] + num2[i] + surplus[i] > 9)
+                    {
+                        string localResult = (num1[i] + num2[i] + surplus[i]).ToString();
+                        if (i != 0)
+                        {
+                            result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
+                            surplus[i - 1] = (int)Char.GetNumericValue(localResult[0]);
+                        }
+                        else
+                        {
+                            result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
+                            result[0] = (int)Char.GetNumericValue(localResult[0]);
+                        }
+                    }
+                    else result[i + 1] = num1[i] + num2[i] + surplus[i];
+                }
+
+                return new HugeInteger(ToString(result));
+            }
         }
 
-        public void Borrow(int position, int[] array)
+        public void Borrow(int position, int[] array) 
         {
             //gives 10 units to number after position
             //takes 1 unit from number at position
@@ -116,43 +133,56 @@ namespace HugeInteger
                 array[position + 1] += 10;
                 array[position]--;
             }
+
             else
                 if (position > 0)
-                Borrow(position - 1, array);
+                    Borrow(position - 1, array); 
         }
 
         public HugeInteger Subtract(HugeInteger h1, HugeInteger h2)
         {
-            //get max length between h1 and h2 to have 2 arrays of the same size
-            int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
+            if (IsNegative(h1) && IsNegative(h2))
+                return Add(h1, new HugeInteger(h2.NumberStr.Replace("-", "0")));
 
-            //creating int arrays
-            int[] num1 = ToIntArray(h1, maxLength);
-            int[] num2 = ToIntArray(h2, maxLength);
-            int[] result = new int[maxLength];
+            else if (IsNegative(h1))
+                return Add(h1, new HugeInteger("-" + h2.NumberStr));
 
-            string finalResult = "";
+            else if (IsNegative(h2))
+                return Add(h1, new HugeInteger(h2.NumberStr.Replace("-", "0")));
 
-            for (int i = maxLength - 1; i >= 0; i--)
+            else
             {
-                if (IsGreaterThanOrEqualTo(h1, h2))
-                {
-                    while (num1[i] - num2[i] < 0 && i > 0)
-                        Borrow(i - 1, num1);
+                //get max length between h1 and h2 to have 2 arrays of the same size
+                int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
 
-                    result[i] = num1[i] - num2[i];
-                    finalResult = ToString(result);
-                }
-                else
-                {
-                    while (num2[i] - num1[i] < 0 && i > 0)
-                        Borrow(i - 1, num2);
+                //creating int arrays
+                int[] num1 = ToIntArray(h1, maxLength);
+                int[] num2 = ToIntArray(h2, maxLength);
+                int[] result = new int[maxLength];
 
-                    result[i] = num2[i] - num1[i];
-                    finalResult = "-" + ToString(result);
+                string finalResult = "";
+
+                for (int i = maxLength - 1; i >= 0; i--)
+                {
+                    if (IsGreaterThanOrEqualTo(h1, h2))
+                    {
+                        while (num1[i] - num2[i] < 0 && i > 0)
+                            Borrow(i - 1, num1);
+
+                        result[i] = num1[i] - num2[i];
+                        finalResult = ToString(result);
+                    }
+                    else
+                    {
+                        while (num2[i] - num1[i] < 0 && i > 0)
+                            Borrow(i - 1, num2);
+
+                        result[i] = num2[i] - num1[i];
+                        finalResult = "-" + ToString(result);
+                    }
                 }
+                return new HugeInteger(finalResult);
             }
-            return new HugeInteger(finalResult);
         }
 
         public Boolean IsZero(HugeInteger h1)
@@ -162,6 +192,14 @@ namespace HugeInteger
                     return false;
 
             return true; //only returns true if ALL chars in the array are zero
+        }
+
+        public Boolean IsNegative(HugeInteger h1)
+        {
+            if (h1.NumberStr[0].Equals('-'))
+                return true;
+
+            return false;
         }
 
         public Boolean IsEqualTo(HugeInteger h1, HugeInteger h2)
@@ -193,6 +231,15 @@ namespace HugeInteger
             if (IsEqualTo(h1, h2))
                 return false;
 
+            else if (IsNegative(h1) && IsNegative(h2))
+                return IsLessThan(new HugeInteger(h1.NumberStr.Replace("-", "0")), new HugeInteger(h2.NumberStr.Replace("-", "0")));
+
+            else if (IsNegative(h1))
+                return false;
+
+            else if (IsNegative(h2))
+                return true;
+
             else
             {
                 //get max length between h1 and h2
@@ -209,7 +256,6 @@ namespace HugeInteger
                     else if (num1[i] < num2[i])
                         return false;
                 }
-                //this bugs me, deal with it later
                 return false;
             }
         }
