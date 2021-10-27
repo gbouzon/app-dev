@@ -35,7 +35,7 @@
         13. implement IsLessThan() -<b>DONE</b> <br>
         14. implement IsGreaterThanOrEqualTo() -<b>DONE</b> <br>
         15. implement IsLessThanOrEqualTo() -<b>DONE</b> <br>
-        16. implement IsNegative() <br>
+        16. implement IsNegative() -<b>DONE</b> <br>
     </blockquote>
 </p>
 
@@ -56,7 +56,7 @@
         1. erase printlns & extra comments -<b>DONE</b> <br>
         2. refactor <br>
         3. returns a result[] with an extra zero in front (modify if time allows) <br>
-        4. deal with negative numbers
+        4. deal with negative numbers -<b>DONE</b>
     </blockquote>
 </p>
 
