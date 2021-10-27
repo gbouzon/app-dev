@@ -12,7 +12,7 @@
         4. add documentation <br>
         5. radio button stuff -<b>DONE</b> <br>
         6. do checkboxes instead of radio buttons (since multiple are true, multiple can be checked) <br>
-        7. update IsValidInput <br>
+        7. update IsValidInput -<b>DONE</b> <br>
     </blockquote>
 </p>
 
@@ -45,7 +45,7 @@
 
 <p>
     <blockquote>
-        1. modify to allow negative numbers (meaning index 0 CAN be something other than a digit (-)) <br>
+        1. modify to allow negative numbers (meaning index 0 CAN be something other than a digit (-)) -<b>DONE</b> <br>
     </blockquote>
 </p>
 
