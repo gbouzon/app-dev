@@ -36,12 +36,12 @@ namespace HugeInteger
             this.subtractionButton = new System.Windows.Forms.Button();
             this.multiplicationButton = new System.Windows.Forms.Button();
             this.divisionButton = new System.Windows.Forms.Button();
-            this.isEqualToRadioButton = new System.Windows.Forms.RadioButton();
-            this.isNotEqualToRadioButton = new System.Windows.Forms.RadioButton();
-            this.isGreaterThanRadioButton = new System.Windows.Forms.RadioButton();
-            this.isLessThanRadioButton = new System.Windows.Forms.RadioButton();
-            this.isGreaterThanOrEqualToRadioButton = new System.Windows.Forms.RadioButton();
-            this.isLessThanOrEqualToRadioButton = new System.Windows.Forms.RadioButton();
+            this.isEqualToCheckBox = new System.Windows.Forms.CheckBox();
+            this.isNotEqualToCheckBox = new System.Windows.Forms.CheckBox();
+            this.isGreaterThanCheckBox = new System.Windows.Forms.CheckBox();
+            this.isLessThanCheckBox = new System.Windows.Forms.CheckBox();
+            this.isGreaterThanOrEqualToCheckBox = new System.Windows.Forms.CheckBox();
+            this.isLessThanOrEqualToCheckBox = new System.Windows.Forms.CheckBox();
             this.remainderButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.displayLabel = new System.Windows.Forms.Label();
@@ -123,79 +123,78 @@ namespace HugeInteger
             this.divisionButton.Text = "Division";
             this.divisionButton.UseVisualStyleBackColor = false;
             // 
-            // isEqualToRadioButton
+            // isEqualToCheckBox
             // 
-            this.isEqualToRadioButton.AutoSize = true;
-            this.isEqualToRadioButton.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.isEqualToRadioButton.Enabled = false;
-            this.isEqualToRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isEqualToRadioButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.isEqualToRadioButton.Location = new System.Drawing.Point(20, 29);
-            this.isEqualToRadioButton.Name = "isEqualToRadioButton";
-            this.isEqualToRadioButton.Size = new System.Drawing.Size(40, 24);
-            this.isEqualToRadioButton.TabIndex = 6;
-            this.isEqualToRadioButton.Text = "=";
-            this.isEqualToRadioButton.UseVisualStyleBackColor = false;
+            this.isEqualToCheckBox.AutoSize = true;
+            this.isEqualToCheckBox.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.isEqualToCheckBox.Enabled = false;
+            this.isEqualToCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isEqualToCheckBox.Location = new System.Drawing.Point(20, 29);
+            this.isEqualToCheckBox.Name = "isEqualToCheckBox";
+            this.isEqualToCheckBox.Size = new System.Drawing.Size(41, 24);
+            this.isEqualToCheckBox.TabIndex = 6;
+            this.isEqualToCheckBox.Text = "=";
+            this.isEqualToCheckBox.UseVisualStyleBackColor = false;
             // 
-            // isNotEqualToRadioButton
+            // isNotEqualToCheckBox
             // 
-            this.isNotEqualToRadioButton.AutoSize = true;
-            this.isNotEqualToRadioButton.Enabled = false;
-            this.isNotEqualToRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isNotEqualToRadioButton.Location = new System.Drawing.Point(20, 59);
-            this.isNotEqualToRadioButton.Name = "isNotEqualToRadioButton";
-            this.isNotEqualToRadioButton.Size = new System.Drawing.Size(45, 24);
-            this.isNotEqualToRadioButton.TabIndex = 7;
-            this.isNotEqualToRadioButton.Text = "!=";
-            this.isNotEqualToRadioButton.UseVisualStyleBackColor = true;
+            this.isNotEqualToCheckBox.AutoSize = true;
+            this.isNotEqualToCheckBox.Enabled = false;
+            this.isNotEqualToCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isNotEqualToCheckBox.Location = new System.Drawing.Point(20, 59);
+            this.isNotEqualToCheckBox.Name = "isNotEqualToCheckBox";
+            this.isNotEqualToCheckBox.Size = new System.Drawing.Size(46, 24);
+            this.isNotEqualToCheckBox.TabIndex = 7;
+            this.isNotEqualToCheckBox.Text = "!=";
+            this.isNotEqualToCheckBox.UseVisualStyleBackColor = true;
             // 
-            // isGreaterThanRadioButton
+            // isGreaterThanCheckBox
             // 
-            this.isGreaterThanRadioButton.AutoSize = true;
-            this.isGreaterThanRadioButton.Enabled = false;
-            this.isGreaterThanRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isGreaterThanRadioButton.Location = new System.Drawing.Point(20, 89);
-            this.isGreaterThanRadioButton.Name = "isGreaterThanRadioButton";
-            this.isGreaterThanRadioButton.Size = new System.Drawing.Size(40, 24);
-            this.isGreaterThanRadioButton.TabIndex = 8;
-            this.isGreaterThanRadioButton.Text = ">";
-            this.isGreaterThanRadioButton.UseVisualStyleBackColor = true;
+            this.isGreaterThanCheckBox.AutoSize = true;
+            this.isGreaterThanCheckBox.Enabled = false;
+            this.isGreaterThanCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isGreaterThanCheckBox.Location = new System.Drawing.Point(20, 89);
+            this.isGreaterThanCheckBox.Name = "isGreaterThanCheckBox";
+            this.isGreaterThanCheckBox.Size = new System.Drawing.Size(41, 24);
+            this.isGreaterThanCheckBox.TabIndex = 8;
+            this.isGreaterThanCheckBox.Text = ">";
+            this.isGreaterThanCheckBox.UseVisualStyleBackColor = true;
             // 
-            // isLessThanRadioButton
+            // isLessThanCheckBox
             // 
-            this.isLessThanRadioButton.AutoSize = true;
-            this.isLessThanRadioButton.Enabled = false;
-            this.isLessThanRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isLessThanRadioButton.Location = new System.Drawing.Point(131, 29);
-            this.isLessThanRadioButton.Name = "isLessThanRadioButton";
-            this.isLessThanRadioButton.Size = new System.Drawing.Size(40, 24);
-            this.isLessThanRadioButton.TabIndex = 9;
-            this.isLessThanRadioButton.Text = "<";
-            this.isLessThanRadioButton.UseVisualStyleBackColor = true;
+            this.isLessThanCheckBox.AutoSize = true;
+            this.isLessThanCheckBox.Enabled = false;
+            this.isLessThanCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isLessThanCheckBox.Location = new System.Drawing.Point(131, 29);
+            this.isLessThanCheckBox.Name = "isLessThanCheckBox";
+            this.isLessThanCheckBox.Size = new System.Drawing.Size(41, 24);
+            this.isLessThanCheckBox.TabIndex = 9;
+            this.isLessThanCheckBox.Text = "<";
+            this.isLessThanCheckBox.UseVisualStyleBackColor = true;
             // 
-            // isGreaterThanOrEqualToRadioButton
+            // isGreaterThanOrEqualToCheckBox
             // 
-            this.isGreaterThanOrEqualToRadioButton.AutoSize = true;
-            this.isGreaterThanOrEqualToRadioButton.Enabled = false;
-            this.isGreaterThanOrEqualToRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isGreaterThanOrEqualToRadioButton.Location = new System.Drawing.Point(131, 59);
-            this.isGreaterThanOrEqualToRadioButton.Name = "isGreaterThanOrEqualToRadioButton";
-            this.isGreaterThanOrEqualToRadioButton.Size = new System.Drawing.Size(50, 24);
-            this.isGreaterThanOrEqualToRadioButton.TabIndex = 10;
-            this.isGreaterThanOrEqualToRadioButton.Text = ">=";
-            this.isGreaterThanOrEqualToRadioButton.UseVisualStyleBackColor = true;
+            this.isGreaterThanOrEqualToCheckBox.AutoSize = true;
+            this.isGreaterThanOrEqualToCheckBox.Enabled = false;
+            this.isGreaterThanOrEqualToCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isGreaterThanOrEqualToCheckBox.Location = new System.Drawing.Point(131, 59);
+            this.isGreaterThanOrEqualToCheckBox.Name = "isGreaterThanOrEqualToCheckBox";
+            this.isGreaterThanOrEqualToCheckBox.Size = new System.Drawing.Size(51, 24);
+            this.isGreaterThanOrEqualToCheckBox.TabIndex = 10;
+            this.isGreaterThanOrEqualToCheckBox.Text = ">=";
+            this.isGreaterThanOrEqualToCheckBox.UseVisualStyleBackColor = true;
             // 
-            // isLessThanOrEqualToRadioButton
+            // isLessThanOrEqualToCheckBox
             // 
-            this.isLessThanOrEqualToRadioButton.AutoSize = true;
-            this.isLessThanOrEqualToRadioButton.Enabled = false;
-            this.isLessThanOrEqualToRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isLessThanOrEqualToRadioButton.Location = new System.Drawing.Point(131, 89);
-            this.isLessThanOrEqualToRadioButton.Name = "isLessThanOrEqualToRadioButton";
-            this.isLessThanOrEqualToRadioButton.Size = new System.Drawing.Size(50, 24);
-            this.isLessThanOrEqualToRadioButton.TabIndex = 11;
-            this.isLessThanOrEqualToRadioButton.Text = "<=";
-            this.isLessThanOrEqualToRadioButton.UseVisualStyleBackColor = true;
+            this.isLessThanOrEqualToCheckBox.AutoSize = true;
+            this.isLessThanOrEqualToCheckBox.Enabled = false;
+            this.isLessThanOrEqualToCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isLessThanOrEqualToCheckBox.Location = new System.Drawing.Point(131, 89);
+            this.isLessThanOrEqualToCheckBox.Name = "isLessThanOrEqualToCheckBox";
+            this.isLessThanOrEqualToCheckBox.Size = new System.Drawing.Size(51, 24);
+            this.isLessThanOrEqualToCheckBox.TabIndex = 11;
+            this.isLessThanOrEqualToCheckBox.Text = "<=";
+            this.isLessThanOrEqualToCheckBox.UseVisualStyleBackColor = true;
             // 
             // remainderButton
             // 
@@ -229,16 +228,16 @@ namespace HugeInteger
             this.displayLabel.Size = new System.Drawing.Size(263, 35);
             this.displayLabel.TabIndex = 14;
             this.displayLabel.Text = "Result here";
-            this.displayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.displayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // radioButtonsGroupBox
             // 
-            this.radioButtonsGroupBox.Controls.Add(this.isEqualToRadioButton);
-            this.radioButtonsGroupBox.Controls.Add(this.isNotEqualToRadioButton);
-            this.radioButtonsGroupBox.Controls.Add(this.isGreaterThanRadioButton);
-            this.radioButtonsGroupBox.Controls.Add(this.isLessThanRadioButton);
-            this.radioButtonsGroupBox.Controls.Add(this.isLessThanOrEqualToRadioButton);
-            this.radioButtonsGroupBox.Controls.Add(this.isGreaterThanOrEqualToRadioButton);
+            this.radioButtonsGroupBox.Controls.Add(this.isEqualToCheckBox);
+            this.radioButtonsGroupBox.Controls.Add(this.isNotEqualToCheckBox);
+            this.radioButtonsGroupBox.Controls.Add(this.isGreaterThanCheckBox);
+            this.radioButtonsGroupBox.Controls.Add(this.isLessThanCheckBox);
+            this.radioButtonsGroupBox.Controls.Add(this.isLessThanOrEqualToCheckBox);
+            this.radioButtonsGroupBox.Controls.Add(this.isGreaterThanOrEqualToCheckBox);
             this.radioButtonsGroupBox.Location = new System.Drawing.Point(90, 319);
             this.radioButtonsGroupBox.Name = "radioButtonsGroupBox";
             this.radioButtonsGroupBox.Size = new System.Drawing.Size(192, 128);
@@ -279,12 +278,12 @@ namespace HugeInteger
         private System.Windows.Forms.Button subtractionButton;
         private System.Windows.Forms.Button multiplicationButton;
         private System.Windows.Forms.Button divisionButton;
-        private System.Windows.Forms.RadioButton isEqualToRadioButton;
-        private System.Windows.Forms.RadioButton isNotEqualToRadioButton;
-        private System.Windows.Forms.RadioButton isGreaterThanRadioButton;
-        private System.Windows.Forms.RadioButton isLessThanRadioButton;
-        private System.Windows.Forms.RadioButton isGreaterThanOrEqualToRadioButton;
-        private System.Windows.Forms.RadioButton isLessThanOrEqualToRadioButton;
+        private System.Windows.Forms.CheckBox isEqualToCheckBox;
+        private System.Windows.Forms.CheckBox isNotEqualToCheckBox;
+        private System.Windows.Forms.CheckBox isGreaterThanCheckBox;
+        private System.Windows.Forms.CheckBox isLessThanCheckBox;
+        private System.Windows.Forms.CheckBox isGreaterThanOrEqualToCheckBox;
+        private System.Windows.Forms.CheckBox isLessThanOrEqualToCheckBox;
         private System.Windows.Forms.Button remainderButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label displayLabel;

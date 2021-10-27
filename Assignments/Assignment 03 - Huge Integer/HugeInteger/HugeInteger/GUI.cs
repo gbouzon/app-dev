@@ -24,7 +24,7 @@ namespace HugeInteger
 
         private Boolean IsValidInput(String input)
         {
-            //regex to only match numbers(negative and positive)
+            //using regex to only match numbers(negative and positive)
             Regex rx = new Regex("^-?[0-9]+$");
             if (rx.IsMatch(input))
                 return true;
@@ -64,12 +64,15 @@ namespace HugeInteger
                 ShowErrorMessage("Only digits are accepted as input. Please enter valid input.");
                 RefreshInput();
             }
+
             else
             {
                 h1 = new HugeInteger(input1TextBox.Text);
                 h2 = new HugeInteger(input2TextBox.Text);
                 displayLabel.Text = h1.Add(h1, h2).ToString();
             }
+
+            clearRadioButtons();
             checkRadioButtons(); //automatically compares numbers and checks radio buttons accordingly
         }
 
@@ -80,12 +83,15 @@ namespace HugeInteger
                 ShowErrorMessage("Only digits are accepted as input. Please enter valid input.");
                 RefreshInput();
             }
+
             else
             {
                 h1 = new HugeInteger(input1TextBox.Text);
                 h2 = new HugeInteger(input2TextBox.Text);
                 displayLabel.Text = h1.Subtract(h1, h2).ToString();
             }
+
+            clearRadioButtons();
             checkRadioButtons(); //automatically compares numbers and checks radio buttons accordingly
         }
 
@@ -100,29 +106,32 @@ namespace HugeInteger
             h2 = new HugeInteger(input2TextBox.Text);
 
             if (h1.IsEqualTo(h1, h2))
-                isEqualToRadioButton.Checked = true;
+                isEqualToCheckBox.Checked = true;
+
             if (h1.IsNotEqualTo(h1, h2))
-                isNotEqualToRadioButton.Checked = true;
+                isNotEqualToCheckBox.Checked = true;
+
             if (h1.IsGreaterThan(h1, h2))
-                isGreaterThanRadioButton.Checked = true;
+                isGreaterThanCheckBox.Checked = true;
+
             if (h1.IsLessThan(h1, h2))
-                isLessThanRadioButton.Checked = true;
+                isLessThanCheckBox.Checked = true;
+
             if (h1.IsGreaterThanOrEqualTo(h1, h2))
-                isGreaterThanOrEqualToRadioButton.Checked = true;
+                isGreaterThanOrEqualToCheckBox.Checked = true;
+
             if (h1.IsLessThanOrEqualTo(h1, h2))
-                isLessThanOrEqualToRadioButton.Checked = true;
+                isLessThanOrEqualToCheckBox.Checked = true;
         }
 
         private void clearRadioButtons()
         {
-            isEqualToRadioButton.Checked = false;
-            isNotEqualToRadioButton.Checked = false;
-            isGreaterThanRadioButton.Checked = false;
-            isLessThanRadioButton.Checked = false;
-            isGreaterThanOrEqualToRadioButton.Checked = false;
-            isLessThanOrEqualToRadioButton.Checked = false;
+            isEqualToCheckBox.Checked = false;
+            isNotEqualToCheckBox.Checked = false;
+            isGreaterThanCheckBox.Checked = false;
+            isLessThanCheckBox.Checked = false;
+            isGreaterThanOrEqualToCheckBox.Checked = false;
+            isLessThanOrEqualToCheckBox.Checked = false;
         }
-
-
     }
 }
