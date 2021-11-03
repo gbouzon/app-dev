@@ -136,7 +136,44 @@ namespace HugeInteger
 
         public HugeInteger Divide(HugeInteger h1, HugeInteger h2)
         {
-            return new HugeInteger("change this later");
+            bool isNegative = false;
+
+            if (IsNegative(h1) && IsNegative(h2))
+                isNegative = false;
+
+            else if (IsNegative(h1) || IsNegative(h2))
+                isNegative = true;
+
+            //redefining in case negatives
+            h1 = new HugeInteger(h1.NumberStr.Replace("-", "0"));
+            h2 = new HugeInteger(h2.NumberStr.Replace("-", "0"));
+
+            if (IsLessThan(h1, h2) || IsZero(h1))
+                return new HugeInteger("0");
+
+            else if (IsEqualTo(h1, h2))
+                return new HugeInteger("1");
+
+            else if (IsZero(h2))
+                return new HugeInteger("Cannot divide by zero");
+
+            //redefining without leading zeroes
+            h1 = new HugeInteger(ToString(h1.Input()));
+            h2 = new HugeInteger(ToString(h2.Input()));
+
+            HugeInteger count = new HugeInteger("0");
+            HugeInteger one = new HugeInteger("1"); //used for incrementation
+
+            while (!IsNegative(Subtract(h1, h2)))
+            {
+                h1 = Subtract(h1, h2);
+                count = Add(count, one);
+            }
+
+            if (isNegative)
+                return new HugeInteger("-" + count.ToString());
+            else
+                return count;
         }
 
         public HugeInteger Remainder(HugeInteger h1, HugeInteger h2)
