@@ -1,4 +1,6 @@
-# Huge Integer Assignment TODOs 
+# Huge Integer Assignment TODOs
+
+Main: Just do some more refactoring where you can
 
 ## Classes:
 
@@ -6,8 +8,8 @@
 
 <p>
     <blockquote>
-        1. refactor & clean code <br>
-        2. implement click events for the rest of the buttons <br>
+        1. refactor & clean code -<b>DONE</b> <br>
+        2. implement click events for the rest of the buttons -<b>DONE</b> <br>
         3. remove repetition in ^^ (later when h instantiation and error check are repeated) <br>
         4. add documentation <br>
         5. radio button stuff -<b>DONE</b> <br>
@@ -20,12 +22,12 @@
 
 <p>
     <blockquote>
-        01. refactor & clean code <br>
+        01. refactor & clean code -<b>DONE</b> <br>
         02. fix Input() conversion to char[] -> int[] instead -<b>DONE</b> <br>
         03. replace all mentions of char[] ^^ -<b>DONE</b> <br>
-        04. implement Multiply() <br>
-        05. implement Divide() <br>
-        06. implement Remainder() <br>
+        04. implement Multiply() -<b>DONE</b> <br>
+        05. implement Divide()  -<b>DONE</b> <br>
+        06. implement Remainder() -<b>DONE</b> <br>
         07. implement Add() -<b>DONE</b> <br>
         08. implement Subtract() -<b>DONE</b> <br>
         09. implement IsZero() -<b>DONE</b> <br>
@@ -54,8 +56,8 @@
 <p>
     <blockquote>
         1. erase printlns & extra comments -<b>DONE</b> <br>
-        2. refactor <br>
-        3. returns a result[] with an extra zero in front (modify if time allows) <br>
+        2. refactor -<b>DONE</b> <br>
+        3. returns a result[] with an extra zero in front (modify if time allows) -<b>DONE</b> <br>
         4. deal with negative numbers -<b>DONE</b>
     </blockquote>
 </p>
