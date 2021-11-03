@@ -39,16 +39,99 @@ namespace HugeInteger
         {
             return NumberStr; //to print object
         }
-            
+
 
         public string ToString(int[] intArray)
         {
-            return string.Join("", intArray); //transforms array back into string
+            return string.Join("", RemoveZeroes(intArray)); //transforms array back into string
+        }
+
+        public int[] Shift(int[] array, int shift) //basically *10
+        {
+            int[] newArray = new int[array.Length + shift];
+            array.CopyTo(newArray, 0);
+            return newArray;
+        }
+
+        public int[] RemoveZeroes(int[] array) //removes leading zeroes
+        {
+            int index = -1;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] != 0)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index == -1)
+                return new HugeInteger("0").Input();
+
+            int[] newArray = new int[array.Length - index];
+            for (int i = 0; i < array.Length - index; i++)
+                newArray[i] = array[index + i];
+
+            return newArray;
         }
 
         public HugeInteger Multiply(HugeInteger h1, HugeInteger h2)
         {
-            return new HugeInteger("change this later");
+            //please refactor this shit later
+            //your code is ugly and unefficient thanks
+
+            bool isNegative = false;
+
+            if (IsNegative(h1) && IsNegative(h2))
+                isNegative = false;
+            else if (IsNegative(h1) || IsNegative(h2))
+                isNegative = true;
+
+            if (IsZero(h1) || IsZero(h2))
+                return new HugeInteger("0");
+
+            //getting maxLength, do you really need this if you're removing the zeroes later?
+            int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
+
+            //redefining in case negatives
+            h1 = new HugeInteger(h1.NumberStr.Replace("-", "0"));
+            h2 = new HugeInteger(h2.NumberStr.Replace("-", "0"));
+
+            //redefining without leading zeroes
+            h1 = new HugeInteger(ToString(h1.Input()));
+            h2 = new HugeInteger(ToString(h2.Input()));
+
+            //creating int arrays
+            int[] num2 = ToIntArray(h2, maxLength);
+            int[] temp = new int[maxLength + maxLength];
+            int shift = 0;
+            HugeInteger result = new HugeInteger("0");
+
+            //getting lengths without leading zeros
+            int length1 = h1.Input().Length;
+            int length2 = h2.Input().Length;
+
+            if (length2 == 1)
+                for (int i = 0; i < h2.Input()[0]; i++)
+                    result = Add(result, h1);
+
+            else if (length1 == 1)
+                for (int i = 0; i < h1.Input()[0]; i++)
+                    result = Add(result, h2);
+
+            else if (num2.Length > 1)
+            {
+                for (int i = maxLength - 1; i >= 0; i--)
+                {
+                    temp = Multiply(new HugeInteger(num2[i].ToString()), h1).Input();
+                    result = Add(new HugeInteger(ToString(Shift(temp, shift++))), result);
+                }
+            }
+
+            if (isNegative)
+                return new HugeInteger("-" + result.NumberStr);
+            else
+                return result;
         }
 
         public HugeInteger Divide(HugeInteger h1, HugeInteger h2)
@@ -89,7 +172,7 @@ namespace HugeInteger
 
             else if (IsNegative(h2))
                 return Subtract(h1, new HugeInteger(h2.NumberStr.Replace("-", "0")));
-           
+
             else
             {
                 //get max length between h1 and h2 to have 2 arrays of the same size
@@ -124,7 +207,7 @@ namespace HugeInteger
             }
         }
 
-        public void Borrow(int position, int[] array) 
+        public void Borrow(int position, int[] array)
         {
             //gives 10 units to number after position
             //takes 1 unit from number at position
@@ -136,7 +219,7 @@ namespace HugeInteger
 
             else
                 if (position > 0)
-                    Borrow(position - 1, array); 
+                Borrow(position - 1, array);
         }
 
         public HugeInteger Subtract(HugeInteger h1, HugeInteger h2)
@@ -187,6 +270,9 @@ namespace HugeInteger
 
         public Boolean IsZero(HugeInteger h1)
         {
+            if (IsNegative(h1))
+                return false;
+
             for (int i = 0; i < h1.Input().Length; i++)
                 if (h1.Input()[i] != 0)
                     return false;
