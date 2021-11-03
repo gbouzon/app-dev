@@ -123,6 +123,7 @@ namespace HugeInteger
             this.divisionButton.TabIndex = 5;
             this.divisionButton.Text = "Division";
             this.divisionButton.UseVisualStyleBackColor = false;
+            this.divisionButton.Click += new System.EventHandler(this.divisionButton_Click);
             // 
             // isEqualToCheckBox
             // 
