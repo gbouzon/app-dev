@@ -32,6 +32,7 @@ namespace HugeInteger
 
         public int[] Input()
         {
+            //converts string to char array and then the char array to an int array
             return Array.ConvertAll(this.NumberStr.ToCharArray(), c => (int)Char.GetNumericValue(c));
         }
 
@@ -43,10 +44,10 @@ namespace HugeInteger
 
         public string ToString(int[] intArray)
         {
-            return string.Join("", RemoveZeroes(intArray)); //transforms array back into string
+            return string.Join("", RemoveZeroes(intArray)); //transforms array back into string (removes leading zeroes)
         }
 
-        public int[] Shift(int[] array, int shift) //basically *10
+        public int[] Shift(int[] array, int shift) //basically does * 10
         {
             int[] newArray = new int[array.Length + shift];
             array.CopyTo(newArray, 0);
@@ -56,6 +57,7 @@ namespace HugeInteger
         public int[] RemoveZeroes(int[] array) //removes leading zeroes
         {
             int index = -1;
+
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] != 0)
@@ -75,17 +77,20 @@ namespace HugeInteger
             return newArray;
         }
 
+        public bool IsNegativeResult(HugeInteger h1, HugeInteger h2)
+        {
+            if (IsNegative(h1) && IsNegative(h2))
+                return false;
+
+            else if (IsNegative(h1) || IsNegative(h2))
+                return true;
+
+            return false;
+        }
+
         public HugeInteger Multiply(HugeInteger h1, HugeInteger h2)
         {
-            //please refactor this shit later
-            //your code is ugly and unefficient thanks
-
-            bool isNegative = false;
-
-            if (IsNegative(h1) && IsNegative(h2))
-                isNegative = false;
-            else if (IsNegative(h1) || IsNegative(h2))
-                isNegative = true;
+            bool isNegative = IsNegativeResult(h1, h2);
 
             if (IsZero(h1) || IsZero(h2))
                 return new HugeInteger("0");
@@ -101,7 +106,7 @@ namespace HugeInteger
             h1 = new HugeInteger(ToString(h1.Input()));
             h2 = new HugeInteger(ToString(h2.Input()));
 
-            //creating int arrays
+            //creating variables
             int[] num2 = ToIntArray(h2, maxLength);
             int[] temp = new int[maxLength + maxLength];
             int shift = 0;
@@ -123,8 +128,8 @@ namespace HugeInteger
             {
                 for (int i = maxLength - 1; i >= 0; i--)
                 {
-                    temp = Multiply(new HugeInteger(num2[i].ToString()), h1).Input();
-                    result = Add(new HugeInteger(ToString(Shift(temp, shift++))), result);
+                    temp = Multiply(new HugeInteger(num2[i].ToString()), h1).Input(); //calculating partial product
+                    result = Add(new HugeInteger(ToString(Shift(temp, shift++))), result);//adding the partial products
                 }
             }
 
@@ -136,18 +141,13 @@ namespace HugeInteger
 
         public HugeInteger Divide(HugeInteger h1, HugeInteger h2)
         {
-            bool isNegative = false;
-
-            if (IsNegative(h1) && IsNegative(h2))
-                isNegative = false;
-
-            else if (IsNegative(h1) || IsNegative(h2))
-                isNegative = true;
+            bool isNegative = IsNegativeResult(h1, h2);
 
             //redefining in case negatives
             h1 = new HugeInteger(h1.NumberStr.Replace("-", "0"));
             h2 = new HugeInteger(h2.NumberStr.Replace("-", "0"));
 
+            //since integer division returns whole numbers
             if (IsLessThan(h1, h2) || IsZero(h1))
                 return new HugeInteger("0");
 
@@ -202,7 +202,7 @@ namespace HugeInteger
                 return result;
         }
 
-        public int[] ToIntArray(HugeInteger h, int maxLength)
+        public int[] ToIntArray(HugeInteger h, int maxLength) //transforms hugeinteger object into int array
         {
             if (h.NumberStr.Length == maxLength)
                 return h.Input();
@@ -249,13 +249,13 @@ namespace HugeInteger
                         string localResult = (num1[i] + num2[i] + surplus[i]).ToString();
                         if (i != 0)
                         {
-                            result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
-                            surplus[i - 1] = (int)Char.GetNumericValue(localResult[0]);
+                            result[i + 1] = (int) Char.GetNumericValue(localResult[1]);
+                            surplus[i - 1] = (int) Char.GetNumericValue(localResult[0]);
                         }
                         else
                         {
-                            result[i + 1] = (int)Char.GetNumericValue(localResult[1]);
-                            result[0] = (int)Char.GetNumericValue(localResult[0]);
+                            result[i + 1] = (int) Char.GetNumericValue(localResult[1]);
+                            result[0] = (int) Char.GetNumericValue(localResult[0]);
                         }
                     }
                     else result[i + 1] = num1[i] + num2[i] + surplus[i];
@@ -326,7 +326,7 @@ namespace HugeInteger
             }
         }
 
-        public Boolean IsZero(HugeInteger h1)
+        public bool IsZero(HugeInteger h1)
         {
             if (IsNegative(h1))
                 return false;
@@ -338,7 +338,7 @@ namespace HugeInteger
             return true; //only returns true if ALL chars in the array are zero
         }
 
-        public Boolean IsNegative(HugeInteger h1)
+        public bool IsNegative(HugeInteger h1)
         {
             if (h1.NumberStr[0].Equals('-'))
                 return true;
@@ -346,7 +346,7 @@ namespace HugeInteger
             return false;
         }
 
-        public Boolean IsEqualTo(HugeInteger h1, HugeInteger h2)
+        public bool IsEqualTo(HugeInteger h1, HugeInteger h2)
         {
             //get max length between h1 and h2
             int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
@@ -362,7 +362,7 @@ namespace HugeInteger
             return true;
         }
 
-        public Boolean IsNotEqualTo(HugeInteger h1, HugeInteger h2)
+        public bool IsNotEqualTo(HugeInteger h1, HugeInteger h2)
         {
             if (IsEqualTo(h1, h2))
                 return false;
@@ -370,7 +370,7 @@ namespace HugeInteger
             return true;
         }
 
-        public Boolean IsGreaterThan(HugeInteger h1, HugeInteger h2)
+        public bool IsGreaterThan(HugeInteger h1, HugeInteger h2)
         {
             if (IsEqualTo(h1, h2))
                 return false;
@@ -404,7 +404,7 @@ namespace HugeInteger
             }
         }
 
-        public Boolean IsLessThan(HugeInteger h1, HugeInteger h2)
+        public bool IsLessThan(HugeInteger h1, HugeInteger h2)
         {
             if (IsEqualTo(h1, h2) || IsGreaterThan(h1, h2))
                 return false;
@@ -412,7 +412,7 @@ namespace HugeInteger
             return true;
         }
 
-        public Boolean IsGreaterThanOrEqualTo(HugeInteger h1, HugeInteger h2)
+        public bool IsGreaterThanOrEqualTo(HugeInteger h1, HugeInteger h2)
         {
             if (IsGreaterThan(h1, h2) || IsEqualTo(h1, h2))
                 return true;
@@ -420,7 +420,7 @@ namespace HugeInteger
             return false;
         }
 
-        public Boolean IsLessThanOrEqualTo(HugeInteger h1, HugeInteger h2)
+        public bool IsLessThanOrEqualTo(HugeInteger h1, HugeInteger h2)
         {
             if (IsLessThan(h1, h2) || IsEqualTo(h1, h2))
                 return true;

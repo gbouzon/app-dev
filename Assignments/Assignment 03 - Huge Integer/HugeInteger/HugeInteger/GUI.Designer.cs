@@ -203,7 +203,7 @@ namespace HugeInteger
             this.remainderButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.remainderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remainderButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.remainderButton.Location = new System.Drawing.Point(117, 279);
+            this.remainderButton.Location = new System.Drawing.Point(117, 283);
             this.remainderButton.Name = "remainderButton";
             this.remainderButton.Size = new System.Drawing.Size(134, 34);
             this.remainderButton.TabIndex = 12;
@@ -216,7 +216,7 @@ namespace HugeInteger
             this.exitButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.exitButton.Location = new System.Drawing.Point(117, 514);
+            this.exitButton.Location = new System.Drawing.Point(117, 575);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(134, 34);
             this.exitButton.TabIndex = 13;
@@ -226,9 +226,9 @@ namespace HugeInteger
             // 
             // displayLabel
             // 
-            this.displayLabel.Location = new System.Drawing.Point(46, 462);
+            this.displayLabel.Location = new System.Drawing.Point(46, 482);
             this.displayLabel.Name = "displayLabel";
-            this.displayLabel.Size = new System.Drawing.Size(263, 35);
+            this.displayLabel.Size = new System.Drawing.Size(266, 76);
             this.displayLabel.TabIndex = 14;
             this.displayLabel.Text = "Result here";
             this.displayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -241,7 +241,7 @@ namespace HugeInteger
             this.radioButtonsGroupBox.Controls.Add(this.isLessThanCheckBox);
             this.radioButtonsGroupBox.Controls.Add(this.isLessThanOrEqualToCheckBox);
             this.radioButtonsGroupBox.Controls.Add(this.isGreaterThanOrEqualToCheckBox);
-            this.radioButtonsGroupBox.Location = new System.Drawing.Point(90, 319);
+            this.radioButtonsGroupBox.Location = new System.Drawing.Point(89, 336);
             this.radioButtonsGroupBox.Name = "radioButtonsGroupBox";
             this.radioButtonsGroupBox.Size = new System.Drawing.Size(192, 128);
             this.radioButtonsGroupBox.TabIndex = 15;
@@ -253,7 +253,7 @@ namespace HugeInteger
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(363, 584);
+            this.ClientSize = new System.Drawing.Size(373, 621);
             this.Controls.Add(this.radioButtonsGroupBox);
             this.Controls.Add(this.displayLabel);
             this.Controls.Add(this.exitButton);

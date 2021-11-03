@@ -13,7 +13,7 @@ namespace HugeInteger
 {
     public partial class GUI : Form
     {
-
+        
         private HugeInteger h1;
         private HugeInteger h2;
 
