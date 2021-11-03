@@ -178,7 +178,28 @@ namespace HugeInteger
 
         public HugeInteger Remainder(HugeInteger h1, HugeInteger h2)
         {
-            return new HugeInteger("change this later");
+            bool isNegative = false;
+
+            if (IsNegative(h1) || (IsNegative(h1) && IsNegative(h2)))
+                isNegative = true;
+
+            else if (IsNegative(h2) || (!IsNegative(h1) && !IsNegative(h2)))
+                isNegative = false;
+
+            //redefining in case negatives
+            h1 = new HugeInteger(h1.NumberStr.Replace("-", "0"));
+            h2 = new HugeInteger(h2.NumberStr.Replace("-", "0"));
+
+            //redefining without leading zeroes
+            h1 = new HugeInteger(ToString(h1.Input()));
+            h2 = new HugeInteger(ToString(h2.Input()));
+
+            HugeInteger result = Subtract(h1, Multiply(Divide(h1, h2), h2));
+
+            if (isNegative)
+                return new HugeInteger("-" + result.NumberStr);
+            else
+                return result;
         }
 
         public int[] ToIntArray(HugeInteger h, int maxLength)
