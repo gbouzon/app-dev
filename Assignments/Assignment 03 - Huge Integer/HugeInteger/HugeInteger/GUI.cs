@@ -133,6 +133,25 @@ namespace HugeInteger
             checkRadioButtons(); //automatically compares numbers and checks radio buttons accordingly
         }
 
+        private void remainderButton_Click(object sender, EventArgs e)
+        {
+            if (!IsValidInput(input1TextBox.Text) || !IsValidInput(input2TextBox.Text))
+            {
+                ShowErrorMessage("Only digits are accepted as input. Please enter valid input.");
+                RefreshInput();
+            }
+
+            else
+            {
+                h1 = new HugeInteger(input1TextBox.Text);
+                h2 = new HugeInteger(input2TextBox.Text);
+                displayLabel.Text = h1.Remainder(h1, h2).ToString();
+            }
+
+            clearRadioButtons();
+            checkRadioButtons(); //automatically compares numbers and checks radio buttons accordingly
+        }
+
         private void exitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -171,7 +190,5 @@ namespace HugeInteger
             isGreaterThanOrEqualToCheckBox.Checked = false;
             isLessThanOrEqualToCheckBox.Checked = false;
         }
-
-
     }
 }

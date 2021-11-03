@@ -209,6 +209,7 @@ namespace HugeInteger
             this.remainderButton.TabIndex = 12;
             this.remainderButton.Text = "Remainder";
             this.remainderButton.UseVisualStyleBackColor = false;
+            this.remainderButton.Click += new System.EventHandler(this.remainderButton_Click);
             // 
             // exitButton
             // 
