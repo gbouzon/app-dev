@@ -110,6 +110,7 @@ namespace HugeInteger
             this.multiplicationButton.TabIndex = 4;
             this.multiplicationButton.Text = "Multiplication";
             this.multiplicationButton.UseVisualStyleBackColor = false;
+            this.multiplicationButton.Click += new System.EventHandler(this.multiplicationButton_Click);
             // 
             // divisionButton
             // 
