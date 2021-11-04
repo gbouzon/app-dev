@@ -95,9 +95,6 @@ namespace HugeInteger
             if (IsZero(h1) || IsZero(h2))
                 return new HugeInteger("0");
 
-            //getting maxLength, do you really need this if you're removing the zeroes later?
-            int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
-
             //redefining in case negatives
             h1 = new HugeInteger(h1.NumberStr.Replace("-", "0"));
             h2 = new HugeInteger(h2.NumberStr.Replace("-", "0"));
@@ -105,6 +102,9 @@ namespace HugeInteger
             //redefining without leading zeroes
             h1 = new HugeInteger(ToString(h1.Input()));
             h2 = new HugeInteger(ToString(h2.Input()));
+
+            //getting maxLength
+            int maxLength = Math.Max(h1.NumberStr.Length, h2.NumberStr.Length);
 
             //creating variables
             int[] num2 = ToIntArray(h2, maxLength);
@@ -129,7 +129,7 @@ namespace HugeInteger
                 for (int i = maxLength - 1; i >= 0; i--)
                 {
                     temp = Multiply(new HugeInteger(num2[i].ToString()), h1).Input(); //calculating partial product
-                    result = Add(new HugeInteger(ToString(Shift(temp, shift++))), result);//adding the partial products
+                    result = Add(new HugeInteger(ToString(Shift(temp, shift++))), result); //adding the partial products
                 }
             }
 
@@ -378,11 +378,8 @@ namespace HugeInteger
             else if (IsNegative(h1) && IsNegative(h2))
                 return IsLessThan(new HugeInteger(h1.NumberStr.Replace("-", "0")), new HugeInteger(h2.NumberStr.Replace("-", "0")));
 
-            else if (IsNegative(h1))
+            else if (IsNegative(h1) || IsNegative(h2))
                 return false;
-
-            else if (IsNegative(h2))
-                return true;
 
             else
             {
