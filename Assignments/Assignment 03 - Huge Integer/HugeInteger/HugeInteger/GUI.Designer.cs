@@ -53,9 +53,9 @@ namespace HugeInteger
             // 
             this.input1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input1TextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.input1TextBox.Location = new System.Drawing.Point(49, 44);
+            this.input1TextBox.Location = new System.Drawing.Point(22, 42);
             this.input1TextBox.Name = "input1TextBox";
-            this.input1TextBox.Size = new System.Drawing.Size(423, 27);
+            this.input1TextBox.Size = new System.Drawing.Size(487, 27);
             this.input1TextBox.TabIndex = 0;
             this.input1TextBox.Text = "Enter a number";
             this.input1TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -65,9 +65,9 @@ namespace HugeInteger
             // 
             this.input2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input2TextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.input2TextBox.Location = new System.Drawing.Point(49, 88);
+            this.input2TextBox.Location = new System.Drawing.Point(22, 89);
             this.input2TextBox.Name = "input2TextBox";
-            this.input2TextBox.Size = new System.Drawing.Size(423, 27);
+            this.input2TextBox.Size = new System.Drawing.Size(487, 27);
             this.input2TextBox.TabIndex = 1;
             this.input2TextBox.Text = "Enter a number";
             this.input2TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
