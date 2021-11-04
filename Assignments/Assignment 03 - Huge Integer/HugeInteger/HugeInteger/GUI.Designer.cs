@@ -55,7 +55,7 @@ namespace HugeInteger
             this.input1TextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.input1TextBox.Location = new System.Drawing.Point(49, 44);
             this.input1TextBox.Name = "input1TextBox";
-            this.input1TextBox.Size = new System.Drawing.Size(263, 27);
+            this.input1TextBox.Size = new System.Drawing.Size(423, 27);
             this.input1TextBox.TabIndex = 0;
             this.input1TextBox.Text = "Enter a number";
             this.input1TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -65,9 +65,9 @@ namespace HugeInteger
             // 
             this.input2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input2TextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.input2TextBox.Location = new System.Drawing.Point(49, 87);
+            this.input2TextBox.Location = new System.Drawing.Point(49, 88);
             this.input2TextBox.Name = "input2TextBox";
-            this.input2TextBox.Size = new System.Drawing.Size(263, 27);
+            this.input2TextBox.Size = new System.Drawing.Size(423, 27);
             this.input2TextBox.TabIndex = 1;
             this.input2TextBox.Text = "Enter a number";
             this.input2TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -78,9 +78,9 @@ namespace HugeInteger
             this.additionButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.additionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.additionButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.additionButton.Location = new System.Drawing.Point(32, 159);
+            this.additionButton.Location = new System.Drawing.Point(59, 159);
             this.additionButton.Name = "additionButton";
-            this.additionButton.Size = new System.Drawing.Size(134, 34);
+            this.additionButton.Size = new System.Drawing.Size(168, 34);
             this.additionButton.TabIndex = 2;
             this.additionButton.Text = "Addition";
             this.additionButton.UseVisualStyleBackColor = false;
@@ -91,9 +91,9 @@ namespace HugeInteger
             this.subtractionButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.subtractionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subtractionButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.subtractionButton.Location = new System.Drawing.Point(202, 159);
+            this.subtractionButton.Location = new System.Drawing.Point(299, 159);
             this.subtractionButton.Name = "subtractionButton";
-            this.subtractionButton.Size = new System.Drawing.Size(134, 34);
+            this.subtractionButton.Size = new System.Drawing.Size(173, 34);
             this.subtractionButton.TabIndex = 3;
             this.subtractionButton.Text = "Subtraction";
             this.subtractionButton.UseVisualStyleBackColor = false;
@@ -104,9 +104,9 @@ namespace HugeInteger
             this.multiplicationButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.multiplicationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiplicationButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.multiplicationButton.Location = new System.Drawing.Point(32, 222);
+            this.multiplicationButton.Location = new System.Drawing.Point(59, 222);
             this.multiplicationButton.Name = "multiplicationButton";
-            this.multiplicationButton.Size = new System.Drawing.Size(134, 34);
+            this.multiplicationButton.Size = new System.Drawing.Size(168, 34);
             this.multiplicationButton.TabIndex = 4;
             this.multiplicationButton.Text = "Multiplication";
             this.multiplicationButton.UseVisualStyleBackColor = false;
@@ -117,9 +117,9 @@ namespace HugeInteger
             this.divisionButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.divisionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.divisionButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.divisionButton.Location = new System.Drawing.Point(202, 222);
+            this.divisionButton.Location = new System.Drawing.Point(299, 222);
             this.divisionButton.Name = "divisionButton";
-            this.divisionButton.Size = new System.Drawing.Size(134, 34);
+            this.divisionButton.Size = new System.Drawing.Size(173, 34);
             this.divisionButton.TabIndex = 5;
             this.divisionButton.Text = "Division";
             this.divisionButton.UseVisualStyleBackColor = false;
@@ -203,9 +203,9 @@ namespace HugeInteger
             this.remainderButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.remainderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remainderButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.remainderButton.Location = new System.Drawing.Point(117, 283);
+            this.remainderButton.Location = new System.Drawing.Point(154, 284);
             this.remainderButton.Name = "remainderButton";
-            this.remainderButton.Size = new System.Drawing.Size(134, 34);
+            this.remainderButton.Size = new System.Drawing.Size(192, 34);
             this.remainderButton.TabIndex = 12;
             this.remainderButton.Text = "Remainder";
             this.remainderButton.UseVisualStyleBackColor = false;
@@ -216,7 +216,7 @@ namespace HugeInteger
             this.exitButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.exitButton.Location = new System.Drawing.Point(117, 575);
+            this.exitButton.Location = new System.Drawing.Point(192, 590);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(134, 34);
             this.exitButton.TabIndex = 13;
@@ -226,9 +226,9 @@ namespace HugeInteger
             // 
             // displayLabel
             // 
-            this.displayLabel.Location = new System.Drawing.Point(46, 482);
+            this.displayLabel.Location = new System.Drawing.Point(59, 496);
             this.displayLabel.Name = "displayLabel";
-            this.displayLabel.Size = new System.Drawing.Size(266, 76);
+            this.displayLabel.Size = new System.Drawing.Size(402, 76);
             this.displayLabel.TabIndex = 14;
             this.displayLabel.Text = "Result here";
             this.displayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -241,9 +241,9 @@ namespace HugeInteger
             this.radioButtonsGroupBox.Controls.Add(this.isLessThanCheckBox);
             this.radioButtonsGroupBox.Controls.Add(this.isLessThanOrEqualToCheckBox);
             this.radioButtonsGroupBox.Controls.Add(this.isGreaterThanOrEqualToCheckBox);
-            this.radioButtonsGroupBox.Location = new System.Drawing.Point(89, 336);
+            this.radioButtonsGroupBox.Location = new System.Drawing.Point(154, 351);
             this.radioButtonsGroupBox.Name = "radioButtonsGroupBox";
-            this.radioButtonsGroupBox.Size = new System.Drawing.Size(192, 128);
+            this.radioButtonsGroupBox.Size = new System.Drawing.Size(203, 128);
             this.radioButtonsGroupBox.TabIndex = 15;
             this.radioButtonsGroupBox.TabStop = false;
             this.radioButtonsGroupBox.Text = "Comparison";
@@ -253,7 +253,7 @@ namespace HugeInteger
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(373, 621);
+            this.ClientSize = new System.Drawing.Size(521, 636);
             this.Controls.Add(this.radioButtonsGroupBox);
             this.Controls.Add(this.displayLabel);
             this.Controls.Add(this.exitButton);
