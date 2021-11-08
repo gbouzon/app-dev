@@ -1,5 +1,0 @@
-135, Giuliana, Bouzon, -18.65
-245, Marcio, Bouzon, 689.34
-355, Agatha, Gomes, 865.45
-465, GrandFather First Name, GrandFather Last Name, 325.85
-575, Sonia, Bouzon, 0.00
