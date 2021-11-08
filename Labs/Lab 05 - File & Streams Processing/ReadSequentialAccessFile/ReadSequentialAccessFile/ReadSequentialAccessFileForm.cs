@@ -43,7 +43,7 @@ namespace ReadSequentialAccessFile
                         FileStream input = new FileStream(fileName, FileMode.Open, FileAccess.Read);
                         fileReader = new StreamReader(input);
                         openButton.Enabled = false;
-                        openButton.Enabled = true;
+                        nextButton.Enabled = true;
                     }
                     catch (IOException)
                     {
