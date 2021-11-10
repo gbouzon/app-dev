@@ -25,3 +25,9 @@
 <p>
     Package <b>Lab 04 - Base GUI Applications 2</b> contains the solution for Lab 4 (GUIs Part 2). <br>
 </p>
+
+### 5. Lab 05 - File & Streams Processing:
+
+<p>
+    Package <b>Lab 05 - File & Streams Processing</b> contains the solution for Lab 5 (file, directory stuff). <br>
+</p>
