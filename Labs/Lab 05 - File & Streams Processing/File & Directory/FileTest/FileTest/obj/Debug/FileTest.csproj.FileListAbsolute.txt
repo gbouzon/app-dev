@@ -1,0 +1,10 @@
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 05 - File & Streams Processing\File & Directory\FileTest\FileTest\bin\Debug\FileTest.exe.config
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 05 - File & Streams Processing\File & Directory\FileTest\FileTest\bin\Debug\FileTest.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 05 - File & Streams Processing\File & Directory\FileTest\FileTest\bin\Debug\FileTest.pdb
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 05 - File & Streams Processing\File & Directory\FileTest\FileTest\obj\Debug\FileTest.csproj.AssemblyReference.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 05 - File & Streams Processing\File & Directory\FileTest\FileTest\obj\Debug\FileTest.FileTestForm.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 05 - File & Streams Processing\File & Directory\FileTest\FileTest\obj\Debug\FileTest.Properties.Resources.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 05 - File & Streams Processing\File & Directory\FileTest\FileTest\obj\Debug\FileTest.csproj.GenerateResource.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 05 - File & Streams Processing\File & Directory\FileTest\FileTest\obj\Debug\FileTest.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 05 - File & Streams Processing\File & Directory\FileTest\FileTest\obj\Debug\FileTest.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 05 - File & Streams Processing\File & Directory\FileTest\FileTest\obj\Debug\FileTest.pdb
