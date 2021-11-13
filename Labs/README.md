@@ -2,7 +2,7 @@
 
 ## Folders
 
-### 1. Lab 01:
+### 1. Lab 01 - Introduction to C#:
 
 <p>
     Package <b>Lab 1</b> contains the solution for Lab 1 (Introduction to C#). <br>
@@ -30,4 +30,10 @@
 
 <p>
     Package <b>Lab 05 - File & Streams Processing</b> contains the solution for Lab 5 (file, directory stuff). <br>
+</p>
+
+### 6. Lab 06 - GUI-based Applications & Databases:
+
+<p>
+    Package <b>Lab 06 - GUI-based Applications & Databases</b> contains the solution for Lab 6 (databases with Azure, SQL queries w user input, multiforms). <br>
 </p>
