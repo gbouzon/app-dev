@@ -1,0 +1,12 @@
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\bin\Debug\ProductDB.mdf
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\bin\Debug\ProductDB_log.ldf
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\bin\Debug\Products.exe.config
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\bin\Debug\Products.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\bin\Debug\Products.pdb
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\obj\Debug\Products.csproj.AssemblyReference.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\obj\Debug\Products.Form1.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\obj\Debug\Products.Properties.Resources.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\obj\Debug\Products.csproj.GenerateResource.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\obj\Debug\Products.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\obj\Debug\Products.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Products\Products\obj\Debug\Products.pdb
