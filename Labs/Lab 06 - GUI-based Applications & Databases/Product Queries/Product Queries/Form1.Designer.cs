@@ -55,6 +55,7 @@ namespace Product_Queries
             this.productDataSet = new Product_Queries.ProductDataSet();
             this.productTableAdapter = new Product_Queries.ProductDataSetTableAdapters.ProductTableAdapter();
             this.tableAdapterManager = new Product_Queries.ProductDataSetTableAdapters.TableAdapterManager();
+            this.averagePriceButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingNavigator)).BeginInit();
             this.productBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
@@ -120,6 +121,7 @@ namespace Product_Queries
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -206,7 +208,7 @@ namespace Product_Queries
             // 
             // sortByPriceButton
             // 
-            this.sortByPriceButton.Location = new System.Drawing.Point(391, 294);
+            this.sortByPriceButton.Location = new System.Drawing.Point(61, 294);
             this.sortByPriceButton.Name = "sortByPriceButton";
             this.sortByPriceButton.Size = new System.Drawing.Size(149, 45);
             this.sortByPriceButton.TabIndex = 2;
@@ -216,7 +218,7 @@ namespace Product_Queries
             // 
             // unitsGreater100Button
             // 
-            this.unitsGreater100Button.Location = new System.Drawing.Point(216, 294);
+            this.unitsGreater100Button.Location = new System.Drawing.Point(303, 294);
             this.unitsGreater100Button.Name = "unitsGreater100Button";
             this.unitsGreater100Button.Size = new System.Drawing.Size(149, 45);
             this.unitsGreater100Button.TabIndex = 3;
@@ -276,11 +278,22 @@ namespace Product_Queries
             this.tableAdapterManager.ProductTableAdapter = this.productTableAdapter;
             this.tableAdapterManager.UpdateOrder = Product_Queries.ProductDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // averagePriceButton
+            // 
+            this.averagePriceButton.Location = new System.Drawing.Point(541, 294);
+            this.averagePriceButton.Name = "averagePriceButton";
+            this.averagePriceButton.Size = new System.Drawing.Size(149, 45);
+            this.averagePriceButton.TabIndex = 4;
+            this.averagePriceButton.Text = "Average Price of All Items";
+            this.averagePriceButton.UseVisualStyleBackColor = true;
+            this.averagePriceButton.Click += new System.EventHandler(this.averagePriceButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 353);
+            this.Controls.Add(this.averagePriceButton);
             this.Controls.Add(this.unitsGreater100Button);
             this.Controls.Add(this.sortByPriceButton);
             this.Controls.Add(this.productDataGridView);
@@ -325,6 +338,7 @@ namespace Product_Queries
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Button sortByPriceButton;
         private System.Windows.Forms.Button unitsGreater100Button;
+        private System.Windows.Forms.Button averagePriceButton;
     }
 }
 
