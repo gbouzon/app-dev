@@ -1,0 +1,12 @@
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\bin\Debug\ProductDB.mdf
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\bin\Debug\ProductDB_log.ldf
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\bin\Debug\Product Lookup.exe.config
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\bin\Debug\Product Lookup.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\bin\Debug\Product Lookup.pdb
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\obj\Debug\Product Lookup.csproj.AssemblyReference.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\obj\Debug\Product_Lookup.Form1.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\obj\Debug\Product_Lookup.Properties.Resources.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\obj\Debug\Product Lookup.csproj.GenerateResource.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\obj\Debug\Product Lookup.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\obj\Debug\Product Lookup.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Lookup\Product Lookup\obj\Debug\Product Lookup.pdb
