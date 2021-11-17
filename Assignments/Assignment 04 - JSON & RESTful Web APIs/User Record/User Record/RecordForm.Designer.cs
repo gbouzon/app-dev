@@ -57,7 +57,7 @@ namespace User_Record
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(292, 105);
+            this.label2.Location = new System.Drawing.Point(292, 152);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@ namespace User_Record
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(292, 151);
+            this.label3.Location = new System.Drawing.Point(292, 196);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 23);
             this.label3.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace User_Record
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(292, 196);
+            this.label4.Location = new System.Drawing.Point(292, 106);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 23);
             this.label4.TabIndex = 3;
@@ -84,7 +84,7 @@ namespace User_Record
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(292, 240);
+            this.label5.Location = new System.Drawing.Point(292, 239);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 23);
             this.label5.TabIndex = 4;
@@ -107,6 +107,7 @@ namespace User_Record
             this.previousButton.TabIndex = 6;
             this.previousButton.Text = "Previous Record";
             this.previousButton.UseVisualStyleBackColor = true;
+            this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
             // 
             // nextButton
             // 
@@ -116,6 +117,7 @@ namespace User_Record
             this.nextButton.TabIndex = 7;
             this.nextButton.Text = "Next Record";
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // exitButton
             // 
@@ -125,31 +127,32 @@ namespace User_Record
             this.exitButton.TabIndex = 8;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // firstNameTextBox
             // 
-            this.firstNameTextBox.Location = new System.Drawing.Point(398, 105);
+            this.firstNameTextBox.Location = new System.Drawing.Point(398, 152);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.Size = new System.Drawing.Size(206, 22);
             this.firstNameTextBox.TabIndex = 9;
             // 
             // lastNameTextBox
             // 
-            this.lastNameTextBox.Location = new System.Drawing.Point(398, 151);
+            this.lastNameTextBox.Location = new System.Drawing.Point(398, 196);
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.Size = new System.Drawing.Size(206, 22);
             this.lastNameTextBox.TabIndex = 10;
             // 
             // idTextBox
             // 
-            this.idTextBox.Location = new System.Drawing.Point(398, 196);
+            this.idTextBox.Location = new System.Drawing.Point(398, 106);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(206, 22);
             this.idTextBox.TabIndex = 11;
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(398, 240);
+            this.emailTextBox.Location = new System.Drawing.Point(398, 239);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(206, 22);
             this.emailTextBox.TabIndex = 12;
@@ -174,6 +177,7 @@ namespace User_Record
             this.Controls.Add(this.label1);
             this.Name = "RecordForm";
             this.Text = "JSON RESTful API User Record Viewer";
+            this.Load += new System.EventHandler(this.RecordForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
