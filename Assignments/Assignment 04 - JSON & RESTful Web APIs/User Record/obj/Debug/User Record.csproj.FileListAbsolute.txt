@@ -1,0 +1,14 @@
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\bin\Debug\User Record.exe.config
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\bin\Debug\User Record.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\bin\Debug\User Record.pdb
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\bin\Debug\RestSharp.dll
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\bin\Debug\RestSharp.xml
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\obj\Debug\User_Record.RecordForm.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\obj\Debug\User_Record.Properties.Resources.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\obj\Debug\User Record.csproj.GenerateResource.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\obj\Debug\User Record.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\obj\Debug\User Record.csproj.CopyComplete
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\obj\Debug\User Record.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Assignments\Assignment 04 - JSON & RESTful Web APIs\User Record\User Record\obj\Debug\User Record.pdb
