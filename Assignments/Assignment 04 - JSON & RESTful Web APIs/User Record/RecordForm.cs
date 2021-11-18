@@ -21,11 +21,20 @@ namespace User_Record
 
         private static Data RetrieveData()
         {
+            Data data = null;
             //using restsharp
-            var client = new RestClient("https://reqres.in/api/users?per_page=1000");
-            var jsonString = client.Execute(new RestRequest());
-            return JsonConvert.DeserializeObject<Data>(jsonString.Content);
+            try
+            {
+                var client = new RestClient("https://reqres.in/api/users?per_page=1000");
+                var jsonString = client.Execute(new RestRequest());
+                data = JsonConvert.DeserializeObject<Data>(jsonString.Content);
 
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error getting JSON data", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
             //using asyc from HttpClient
             //string jsonString = new HttpClient().GetStringAsync(new Uri("https://reqres.in/api/users?per_page=1000")).Result;
             //result = JsonConvert.DeserializeObject<Data>(jsonString);
@@ -35,6 +44,7 @@ namespace User_Record
             //var client = new WebClient();
             //string jsonString = client.DownloadString("https://reqres.in/api/users?per_page=1000");
             //result = JsonConvert.DeserializeObject<Data>(jsonString);
+            return data;
         }
         private void SetImage(string url) //creating an image from url
         {
