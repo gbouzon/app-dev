@@ -22,7 +22,6 @@ namespace Multiform_Products
             this.Validate();
             this.productBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.productDataSet);
-
         }
 
         private void productBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
@@ -30,14 +29,12 @@ namespace Multiform_Products
             this.Validate();
             this.productBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.productDataSet);
-
         }
 
         private void DetailsForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'productDataSet.Product' table. You can move, or remove it, as needed.
             this.productTableAdapter.Fill(this.productDataSet.Product);
-
         }
 
         private void closeButton_Click(object sender, EventArgs e)

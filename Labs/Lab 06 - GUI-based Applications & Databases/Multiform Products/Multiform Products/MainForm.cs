@@ -29,7 +29,6 @@ namespace Multiform_Products
         {
             // TODO: This line of code loads data into the 'productDataSet.Product' table. You can move, or remove it, as needed.
             this.productTableAdapter.Fill(this.productDataSet.Product);
-
         }
 
         private void showDetailsButton_Click(object sender, EventArgs e)

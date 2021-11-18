@@ -9,3 +9,15 @@ C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 06\LibraryBooks\LibraryBo
 C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 06\LibraryBooks\LibraryBooks\obj\Debug\LibraryBooks.csproj.CoreCompileInputs.cache
 C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 06\LibraryBooks\LibraryBooks\obj\Debug\LibraryBooks.exe
 C:\Users\ga\OneDrive\Documentos\Visual Studio 2019\Lab 06\LibraryBooks\LibraryBooks\obj\Debug\LibraryBooks.pdb
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\bin\Debug\BookDatabase.mdf
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\bin\Debug\BookDatabase_log.ldf
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\bin\Debug\LibraryBooks.exe.config
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\bin\Debug\LibraryBooks.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\bin\Debug\LibraryBooks.pdb
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\obj\Debug\LibraryBooks.csproj.AssemblyReference.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\obj\Debug\LibraryBooks.Form1.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\obj\Debug\LibraryBooks.Properties.Resources.resources
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\obj\Debug\LibraryBooks.csproj.GenerateResource.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\obj\Debug\LibraryBooks.csproj.CoreCompileInputs.cache
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\obj\Debug\LibraryBooks.exe
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\LibraryBooks\LibraryBooks\obj\Debug\LibraryBooks.pdb

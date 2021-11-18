@@ -10,3 +10,4 @@ C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Developmen
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Multiform Products\Multiform Products\obj\Debug\Multiform Products.csproj.CoreCompileInputs.cache
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Multiform Products\Multiform Products\obj\Debug\Multiform Products.exe
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Multiform Products\Multiform Products\obj\Debug\Multiform Products.pdb
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Multiform Products\Multiform Products\obj\Debug\Multiform Products.csproj.AssemblyReference.cache

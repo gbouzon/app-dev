@@ -30,27 +30,27 @@ namespace Multiform_Products
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetailsForm));
             System.Windows.Forms.Label product_NumberLabel;
             System.Windows.Forms.Label descriptionLabel;
             System.Windows.Forms.Label units_On_HandLabel;
             System.Windows.Forms.Label priceLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetailsForm));
             this.productDataSet = new Multiform_Products.ProductDataSet();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productTableAdapter = new Multiform_Products.ProductDataSetTableAdapters.ProductTableAdapter();
             this.tableAdapterManager = new Multiform_Products.ProductDataSetTableAdapters.TableAdapterManager();
             this.productBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.productBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.product_NumberTextBox = new System.Windows.Forms.TextBox();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
@@ -66,6 +66,42 @@ namespace Multiform_Products
             ((System.ComponentModel.ISupportInitialize)(this.productBindingNavigator)).BeginInit();
             this.productBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // product_NumberLabel
+            // 
+            product_NumberLabel.AutoSize = true;
+            product_NumberLabel.Location = new System.Drawing.Point(24, 43);
+            product_NumberLabel.Name = "product_NumberLabel";
+            product_NumberLabel.Size = new System.Drawing.Size(115, 17);
+            product_NumberLabel.TabIndex = 1;
+            product_NumberLabel.Text = "Product Number:";
+            // 
+            // descriptionLabel
+            // 
+            descriptionLabel.AutoSize = true;
+            descriptionLabel.Location = new System.Drawing.Point(24, 69);
+            descriptionLabel.Name = "descriptionLabel";
+            descriptionLabel.Size = new System.Drawing.Size(83, 17);
+            descriptionLabel.TabIndex = 3;
+            descriptionLabel.Text = "Description:";
+            // 
+            // units_On_HandLabel
+            // 
+            units_On_HandLabel.AutoSize = true;
+            units_On_HandLabel.Location = new System.Drawing.Point(24, 97);
+            units_On_HandLabel.Name = "units_On_HandLabel";
+            units_On_HandLabel.Size = new System.Drawing.Size(105, 17);
+            units_On_HandLabel.TabIndex = 5;
+            units_On_HandLabel.Text = "Units On Hand:";
+            // 
+            // priceLabel
+            // 
+            priceLabel.AutoSize = true;
+            priceLabel.Location = new System.Drawing.Point(24, 125);
+            priceLabel.Name = "priceLabel";
+            priceLabel.Size = new System.Drawing.Size(44, 17);
+            priceLabel.TabIndex = 7;
+            priceLabel.Text = "Price:";
             // 
             // productDataSet
             // 
@@ -118,6 +154,31 @@ namespace Multiform_Products
             this.productBindingNavigator.TabIndex = 0;
             this.productBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -151,16 +212,9 @@ namespace Multiform_Products
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
@@ -183,26 +237,8 @@ namespace Multiform_Products
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // productBindingNavigatorSaveItem
             // 
@@ -213,15 +249,6 @@ namespace Multiform_Products
             this.productBindingNavigatorSaveItem.Text = "Save Data";
             this.productBindingNavigatorSaveItem.Click += new System.EventHandler(this.productBindingNavigatorSaveItem_Click_1);
             // 
-            // product_NumberLabel
-            // 
-            product_NumberLabel.AutoSize = true;
-            product_NumberLabel.Location = new System.Drawing.Point(24, 43);
-            product_NumberLabel.Name = "product_NumberLabel";
-            product_NumberLabel.Size = new System.Drawing.Size(115, 17);
-            product_NumberLabel.TabIndex = 1;
-            product_NumberLabel.Text = "Product Number:";
-            // 
             // product_NumberTextBox
             // 
             this.product_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Product_Number", true));
@@ -229,15 +256,6 @@ namespace Multiform_Products
             this.product_NumberTextBox.Name = "product_NumberTextBox";
             this.product_NumberTextBox.Size = new System.Drawing.Size(177, 22);
             this.product_NumberTextBox.TabIndex = 2;
-            // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(24, 69);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(83, 17);
-            descriptionLabel.TabIndex = 3;
-            descriptionLabel.Text = "Description:";
             // 
             // descriptionTextBox
             // 
@@ -247,15 +265,6 @@ namespace Multiform_Products
             this.descriptionTextBox.Size = new System.Drawing.Size(177, 22);
             this.descriptionTextBox.TabIndex = 4;
             // 
-            // units_On_HandLabel
-            // 
-            units_On_HandLabel.AutoSize = true;
-            units_On_HandLabel.Location = new System.Drawing.Point(24, 97);
-            units_On_HandLabel.Name = "units_On_HandLabel";
-            units_On_HandLabel.Size = new System.Drawing.Size(105, 17);
-            units_On_HandLabel.TabIndex = 5;
-            units_On_HandLabel.Text = "Units On Hand:";
-            // 
             // units_On_HandTextBox
             // 
             this.units_On_HandTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Units_On_Hand", true));
@@ -263,15 +272,6 @@ namespace Multiform_Products
             this.units_On_HandTextBox.Name = "units_On_HandTextBox";
             this.units_On_HandTextBox.Size = new System.Drawing.Size(177, 22);
             this.units_On_HandTextBox.TabIndex = 6;
-            // 
-            // priceLabel
-            // 
-            priceLabel.AutoSize = true;
-            priceLabel.Location = new System.Drawing.Point(24, 125);
-            priceLabel.Name = "priceLabel";
-            priceLabel.Size = new System.Drawing.Size(44, 17);
-            priceLabel.TabIndex = 7;
-            priceLabel.Text = "Price:";
             // 
             // priceTextBox
             // 

@@ -9,3 +9,4 @@ C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Developmen
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Queries\Product Queries\obj\Debug\Product Queries.csproj.CoreCompileInputs.cache
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Queries\Product Queries\obj\Debug\Product Queries.exe
 C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Queries\Product Queries\obj\Debug\Product Queries.pdb
+C:\Users\ga\OneDrive\Desktop\School (2019-2023)\Fall 2021\Application Development\app-dev\Labs\Lab 06 - GUI-based Applications & Databases\Product Queries\Product Queries\obj\Debug\Product Queries.csproj.AssemblyReference.cache
